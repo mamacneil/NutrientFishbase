@@ -12,7 +12,8 @@ Basic model from [Hicks **et al.** 2019](https://www.nature.com/articles/s41586-
 
 1. Add marine/brackish/freshwater categories to the models
 2. Refine data likelihoods to better fit observed data
-3. Add phylogentic regression option
+3. Add observation-level uncertainty
+4. Add phylogentic regression option
 
 
 
