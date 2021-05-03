@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     # --------------------------------------Import data------------------------------------------------------------------ #
     # Species traits data
-    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/traits_for_predictions.csv?token=AADMXITKUWYTYUMVATRYRODAS26OI')
+    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_traits_active.csv?token=AADMXIVNKJK73H7JWLMMVS3ATFNAK')
     
     # List of nutrients
     nlist = pd.read_csv('Nutrient_list.csv')
@@ -116,7 +116,7 @@ if __name__ == '__main__':
 
     # --------------------------------------Compare observed and predicted------------------------------------------------------------------ #
     # Nutrients data
-    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/all_nutrients_active.csv?token=AADMXITPFVMF2LLKVPIPF4TASVILA')
+    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_nutrients_active.csv?token=AADMXIQXB2PVWE46ONK3J2LATFM4E')
     
     # List available nutrients
     Nutrients =  ndata.nutrient.unique()

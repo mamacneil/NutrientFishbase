@@ -50,9 +50,9 @@ if __name__ == '__main__':
     # --------------------------------------Import data------------------------------------------------------------------ #
 
     # Nutrients data
-    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/all_nutrients_active.csv?token=AADMXITPFVMF2LLKVPIPF4TASVILA')
+    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_nutrients_active.csv?token=AADMXIQXB2PVWE46ONK3J2LATFM4E')
     # Traits data
-    tdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/all_traits_active.csv?token=AADMXIVH54FBLNNNE53HRDDASZ4UK')
+    tdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_traits_active.csv?token=AADMXIVNKJK73H7JWLMMVS3ATFNAK')
 
     # --------------------------------------Merge data------------------------------------------------------------------ #
 
