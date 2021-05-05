@@ -63,7 +63,7 @@ if __name__ == '__main__':
     print('Generating estimates for '+str(nspp)+' species:')
     
     # Output dataframe
-    out = sdata[['Species_corrected','Species']]
+    out = sdata[['species','spec_code']]
 
     # Loop over nutrients
     for i in range(nnut):
