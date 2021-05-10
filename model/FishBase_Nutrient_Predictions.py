@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     # --------------------------------------Import data------------------------------------------------------------------ #
     # Species traits data
-    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_traits_active.csv?token=AADMXIVNKJK73H7JWLMMVS3ATFNAK')
+    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/traits_for_predictions.csv?token=AADMXIRJFYMOKMBVGJWH4RDAUJFTO')
     
     # List of nutrients
     nlist = pd.read_csv('Nutrient_list.csv')
@@ -84,9 +84,26 @@ if __name__ == '__main__':
         for i in range(nspp):
             # Grab tratis for species i
             tmp = sdata.iloc[i]
+            
+            # Grab closest phylogenetic intercept
+            if tmp.Genus in REZ.columns:
+                REZ_I = REZ[tmp.Genus].values
+            elif tmp.Family in REZ.columns:
+                REZ_I = REZ[tmp.Family].values
+            elif tmp.Order in REZ.columns:
+                REZ_I = REZ[tmp.Order].values
+            elif tmp.Class in REZ.columns:
+                REZ_I = REZ[tmp.Class].values
+            else:
+                REZ_I = REZ['Intercept'].values
+            
             # Calculate posterior predictions for species i
-            μ_ = REZ['Intercept'].values+REZ[tmp['DemersPelag']].values+REZ[tmp['EnvTemp']].values+REZ['MaxDepth'].values*np.log(tmp['DepthRangeDeep'])+REZ['TL'].values*tmp['trophic_level']+REZ[tmp['Feeding_path']]+REZ['LMax'].values*np.log(tmp['Lmax'])+REZ[tmp['BodyShape']].values+REZ['K'].values*tmp['K']+REZ['tm'].values*np.log(tmp['tm'])
-            μ = np.exp(μ_)
+            μ_ = REZ_I+REZ[tmp['DemersPelag']].values+REZ[tmp['EnvTemp']].values+REZ['MaxDepth'].values*np.log(tmp['DepthRangeDeep'])+REZ['TL'].values*tmp['trophic_level']+REZ[tmp['Feeding_path']]+REZ['LMax'].values*np.log(tmp['Lmax'])+REZ[tmp['BodyShape']].values+REZ['K'].values*tmp['K']+REZ['tm'].values*np.log(tmp['tm'])
+            
+            if nut=='Protein':
+                μ = μ_
+            else:
+                μ = np.exp(μ_)
             
             # Check for infinine estimates
             if np.isinf(np.median(μ)):
@@ -116,7 +133,7 @@ if __name__ == '__main__':
 
     # --------------------------------------Compare observed and predicted------------------------------------------------------------------ #
     # Nutrients data
-    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_nutrients_active.csv?token=AADMXIQXB2PVWE46ONK3J2LATFM4E')
+    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/all_nutrients_active.csv?token=AADMXIQD27LBYKN3NQ2EPTLAUJHHS')
     
     # List available nutrients
     Nutrients =  ndata.nutrient.unique()

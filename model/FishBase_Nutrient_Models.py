@@ -50,10 +50,11 @@ if __name__ == '__main__':
     # --------------------------------------Import data------------------------------------------------------------------ #
 
     # Nutrients data
-    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_nutrients_active.csv?token=AADMXIQXB2PVWE46ONK3J2LATFM4E')
+    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/all_nutrients_active.csv?token=AADMXIS6XUOXXHBRUYHXE33ATZKZY')
     # Traits data
-    tdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_traits_active.csv?token=AADMXIVNKJK73H7JWLMMVS3ATFNAK')
-
+    #tdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/traits_for_predictions.csv?token=AADMXIUIIZPXB35P3LVUMCLAT27L6')
+    tdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/all_traits_active.csv?token=AADMXIXKXDTAKEOBCKYQM53AT27KI')
+    
     # --------------------------------------Merge data------------------------------------------------------------------ #
 
     # Add traits information to nutritional dataframe
@@ -70,18 +71,18 @@ if __name__ == '__main__':
 
     # --------------------------------------Full category list (in case of missing values)------------------------------ #
     # Habitat type
-    Habitat = list(np.sort(pd.unique(tdata["DemersPelag"])))
+    Habitat = list(np.sort(pd.unique(ndata["DemersPelag"])))
     nhabs = len(Habitat)
 
     # Environment type
-    Climate = list(np.sort(pd.unique(tdata["EnvTemp"])))
+    Climate = list(np.sort(pd.unique(ndata["EnvTemp"])))
     nclim = len(Climate)
 
     # Feeding pathway
-    FeedingPath = list(np.sort(pd.unique(tdata["Feeding_path"])))
+    FeedingPath = list(np.sort(pd.unique(ndata["Feeding_path"])))
 
     # Species body shape
-    BodyShape = list(np.sort(pd.unique(tdata["BodyShape"])))
+    BodyShape = list(np.sort(pd.unique(ndata["BodyShape"])))
     nbod = len(BodyShape)
 
     # --------------------------------------Loop over nutrients------------------------------------------------------------------ #
@@ -110,9 +111,18 @@ if __name__ == '__main__':
         Ylog = np.log(Y)
     
         ## Covariates
+        # Class
+        Class,Icl = subindexall(tmpdata["Class"], tmpdata["Order"])
+        ncl = len(Class)
         # Order
-        Io,Order = pd.factorize(tmpdata["Order"], sort=True)
-        nord = len(Order)
+        Order,Ior = subindexall(tmpdata["Order"], tmpdata["Family"])
+        nor = len(Order)
+        # Family
+        Family,Ifa = subindexall(tmpdata["Family"], tmpdata["Genus"])
+        nga = len(Family)
+        # Genus
+        Genus,Ige = indexall(tmpdata["Genus"])
+        ngen = len(Genus)
     
         # Habitat type
         #Ih,Habitat = pd.factorize(tmpdata["DemersPelag"], sort=True)
@@ -154,8 +164,8 @@ if __name__ == '__main__':
 
         # --------------------------------------Specify Bayesian model------------------------------------------------------------------ #
         # Labelling for ArViz
-        coords = {'Order': Order,'Habitat': Habitat, 'Climate': Climate, 'FeedingPath': FeedingPath, 'BodyShape': BodyShape, 'Form': Form,
-            'Prep': Prep}
+        coords = {'Class':Class, 'Order':Order, 'Family':Family, 'Genus':Genus,'Habitat': Habitat, 'Climate': Climate, 'FeedingPath': FeedingPath, 
+        'BodyShape': BodyShape, 'Form': Form, 'Prep': Prep}
 
         # Regularizing prior standard deviation for Normals
         Nsd = 1
@@ -165,10 +175,31 @@ if __name__ == '__main__':
             #"""
             # Intercept
             γ0 = pm.Normal('Intercept', 0, Nsd)
-            # Observation model
-            σγ = pm.Exponential('Sigma_γ', 1)
-            β0_ = pm.Normal('Order_nc', 0, 1, dims='Order')
-            β0 = pm.Deterministic('Order_x', γ0+β0_*σγ, dims='Order')
+            # Phylogeny
+            if len(coords['Class'])==1:
+                # Class
+                σ_o = pm.Exponential('Sigma_order', 1)
+                β0_onc = pm.Normal('Ord_nc', 0, 1, dims='Order')
+                β0_o = pm.Deterministic('Order_', γ0+β0_onc*σ_o, dims='Order')
+            else:    
+                # Class
+                σ_c = pm.Exponential('Sigma_class', 1)
+                β0_cnc = pm.Normal('Cla_nc', 0, 1, dims='Class')
+                β0_c = pm.Deterministic('Class_', γ0+β0_cnc*σ_c, dims='Class') 
+
+                σ_o = pm.Exponential('Sigma_order', 1)
+                β0_onc = pm.Normal('Ord_nc', 0, 1, dims='Order')
+                β0_o = pm.Deterministic('Order_', β0_c[Icl]+β0_onc*σ_o, dims='Order')  
+    
+            # Family
+            σ_f = pm.Exponential('Sigma_family', 1)
+            β0_fnc = pm.Normal('Fam_nc', 0, 1, dims='Family')
+            β0_f = pm.Deterministic('Family_', β0_o[Ior]+β0_fnc*σ_f, dims='Family')    
+    
+            # Genus
+            σ_g = pm.Exponential('Sigma_genus', 1)
+            β0_gnc = pm.Normal('Gen_nc', 0, 1, dims='Genus')
+            β0_g = pm.Deterministic('Genus_', β0_f[Ifa]+β0_gnc*σ_g, dims='Genus')
 
             # Habitat type
             β1 = pm.Normal('Habitat_x', 0, Nsd, dims='Habitat')
@@ -194,24 +225,26 @@ if __name__ == '__main__':
             β11 = pm.Normal('Prep_x', 0, Nsd, dims='Prep')
     
             # Mean model
-            μ_ = β0[Io]+β1[Ih]+β2[Ic]+β3*MaxDepth+β4*TL+β5[If]+β6*LMax+β7[Ib]+β8*K+β9*tm+β10[Im]+β11[Ip]
+            μ_ = β0_g[Ige]+β1[Ih]+β2[Ic]+β3*MaxDepth+β4*TL+β5[If]+β6*LMax+β7[Ib]+β8*K+β9*tm+β10[Im]+β11[Ip]
     
             # Data likelihood
             if nut in ['Protein']:
                 μ = μ_
-                σ = pm.Uniform('Sigma', 0, 10)
+                ν = pm.Uniform('nu', 0, 20)
+                σ = pm.Exponential('Sigma', 1)
+                Yi = pm.StudentT('Yi', ν, μ, σ, observed=Y)
+                ExMu = pm.Deterministic('ExMu', μ_)
+            elif nut in ['Zinc','Calcium','Iron','Vitamin_A']:
+                μ = μ_
+                σ = pm.Exponential('Sigma', 1)
                 ν = pm.Uniform('nu', 0, 20)
                 Yi = pm.StudentT('Yi', ν, μ, σ, observed=Ylog)
-            elif nut in ['Zinc','Iron']:
-                μ = pm.math.exp(μ_)
-                σ = pm.Uniform('Sigma', 0, 10)
-                Yi = pm.Gamma('Yi', alpha=σ, beta=σ/μ, observed=Y)
+                ExMu = pm.Deterministic('ExMu', tt.exp(μ_))
             else:
                 μ = μ_
                 σ = pm.Exponential('Sigma', 1)
                 Yi = pm.Normal('Yi', μ, σ, observed=Ylog)
-    
-            ExMu = pm.Deterministic('ExMu', tt.exp(μ_))
+                ExMu = pm.Deterministic('ExMu', tt.exp(μ_))
             
             # --------------------------------------Prior predictive check------------------------------------------------------------------ #
             with Model_1:
@@ -229,7 +262,23 @@ if __name__ == '__main__':
             pm.plot_trace(trace).ravel()[0].figure.savefig(nut+'_Trace.jpg')
         
             # Export summary stats
-            pm.summary(trace).to_csv(nut+'_Summary.csv',index=False)
+            tmp = pm.summary(trace)
+            colnames = np.array(list(tmp.index), dtype=object)
+            colnames[match(grep('Habitat',list(colnames)),list(colnames))] = Habitat
+            colnames[match(grep('Climate',list(colnames)),list(colnames))] = Climate
+            colnames[match(grep('FeedingPath',list(colnames)),list(colnames))] = FeedingPath
+            colnames[match(grep('BodyShape',list(colnames)),list(colnames))] = BodyShape
+            colnames[match(grep('Form',list(colnames)),list(colnames))] = Form
+            colnames[match(grep('Prep',list(colnames)),list(colnames))] = Prep
+            colnames[match(grep('Order',list(colnames)),list(colnames))] = Order
+            colnames[match(grep('Family',list(colnames)),list(colnames))] = Family
+            colnames[match(grep('Genus',list(colnames)),list(colnames))] = Genus
+
+            if len(coords['Class'])>1:
+                colnames[match(grep('Class',list(colnames)),list(colnames))] = Class
+
+            tmp.index = list(colnames)
+            tmp.to_csv(nut+'_Summary.csv')
         
             # Export traces
             out = pm.backends.tracetab.trace_to_dataframe(trace)
@@ -240,6 +289,13 @@ if __name__ == '__main__':
             colnames[match(grep('BodyShape',list(colnames)),list(colnames))] = BodyShape
             colnames[match(grep('Form',list(colnames)),list(colnames))] = Form
             colnames[match(grep('Prep',list(colnames)),list(colnames))] = Prep
+            colnames[match(grep('Order',list(colnames)),list(colnames))] = Order
+            colnames[match(grep('Family',list(colnames)),list(colnames))] = Family
+            colnames[match(grep('Genus',list(colnames)),list(colnames))] = Genus
+
+            if len(coords['Class'])>1:
+                colnames[match(grep('Class',list(colnames)),list(colnames))] = Class
+
             out.columns = list(colnames)
             out.to_csv(nut+'_results.csv')
         
