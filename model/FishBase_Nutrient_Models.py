@@ -312,6 +312,23 @@ if __name__ == '__main__':
             # Proportion of observations captured
             print('Captured '+str(np.round(np.mean(np.array([ylo<y<yup for y,ylo,yup in zip(Y,Ypred_l90,Ypred_u90)]))*100,1))+'% of '+nut+' observations')
             
+            # Observed vs predicted plot
+            fig = plt.figure(figsize=(9,9))
+            ax1 = fig.add_subplot(211)
+            ax2 = fig.add_subplot(212)
+            # 1 to 1
+            ax1.plot((Y,Y),(Ypred_l90,Ypred_u90),c='b')
+            ax1.scatter(Y,Ypred_mu,s=70)
+            ax1.scatter(Y,Y,s=70,c='red')
+            ax1.set_ylabel('Predicted')
+            ax1.set_title(nut)
+            # Histogram
+            ax2.hist(Y,bins=50,label='Observed')
+            ax2.hist(Ypred_mu,bins=50, label='Predicted')
+            ax2.set_xlabel('Observed')
+            ax2.legend()
+            plt.savefig(nut+'_ObsPred.jpg');
+            
 
 
 #"""
