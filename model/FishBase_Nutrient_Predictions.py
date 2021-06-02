@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     # --------------------------------------Import data------------------------------------------------------------------ #
     # Species traits data
-    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/traits_for_predictions.csv?token=AADMXIRJFYMOKMBVGJWH4RDAUJFTO')
+    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/traits_for_predictions.csv')
     
     # List of nutrients
     nlist = pd.read_csv('Nutrient_list.csv')

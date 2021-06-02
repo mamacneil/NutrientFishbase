@@ -297,6 +297,9 @@ if __name__ == '__main__':
                 colnames[match(grep('Class',list(colnames)),list(colnames))] = Class
 
             out.columns = list(colnames)
+            # Drop unwanted columns
+            xout = list(grep('ExMu_',list(out.columns)))+list(grep('_nc_',list(out.columns)))
+            out = out.drop(columns=xout)
             out.to_csv(nut+'_results.csv')
         
             # --------------------------------------Posterior predictive check------------------------------------------------------------------#
