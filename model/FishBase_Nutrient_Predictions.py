@@ -48,10 +48,58 @@ if __name__ == '__main__':
 
     # --------------------------------------Import data------------------------------------------------------------------ #
     # Species traits data
-    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/traits_for_predictions.csv')
+    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/traits_for_predictions.csv')
+    # Nutrients data
+    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_nutrients_active.csv')
+    # Traits data
+    tdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_traits_active.csv')
     
     # List of nutrients
     nlist = pd.read_csv('Nutrient_list.csv')
+    # --------------------------------------Merge data------------------------------------------------------------------ #
+
+    # Add traits information to nutritional dataframe
+    indx = match(ndata.spec_code.unique(),list(tdata.spec_code.values))
+    rindx = match(ndata.spec_code,list(ndata.spec_code.unique()))
+
+    # Traits to port over
+    tmp = ['Class', 'Order', 'Family','Genus', 'DemersPelag','EnvTemp', 'DepthRangeDeep', 'trophic_level', 'Feeding_path', 'Lmax','BodyShape', 'K', 'tm', 'environment']
+
+    # Port over
+    for trait in tmp:
+        ndata[trait] = tdata[trait].values[indx][rindx]
+    
+    # --------------------------------------Combine categories------------------------------ #
+    #bathydemersal / demersal -> demersal
+    ndata['DemersPelag'] = ndata['DemersPelag'].replace(['bathydemersal'],'demersal')
+    #pelagic / pelagic_neritic / pelagic_oceanic -> pelagic
+    ndata['DemersPelag'] = ndata['DemersPelag'].replace(['pelagic_neritic'],'pelagic')
+    ndata['DemersPelag'] = ndata['DemersPelag'].replace(['pelagic_oceanic'],'pelagic')
+    #benthopelagic    -> no change
+    #reef_associated -> no change
+    ndata['Feeding_path'] = [x+'_path' for x in ndata["Feeding_path"]]
+    
+    #bathydemersal / demersal -> demersal
+    sdata['DemersPelag'] = sdata['DemersPelag'].replace(['bathydemersal'],'demersal')
+    #pelagic / pelagic_neritic / pelagic_oceanic -> pelagic
+    sdata['DemersPelag'] = sdata['DemersPelag'].replace(['pelagic_neritic'],'pelagic')
+    sdata['DemersPelag'] = sdata['DemersPelag'].replace(['pelagic_oceanic'],'pelagic')
+    sdata['DemersPelag'] = sdata['DemersPelag'].replace(['bathypelagic'],'pelagic')
+    #benthopelagic    -> no change
+    #reef_associated -> no change
+    sdata['Feeding_path'] = [x+'_path' for x in sdata["Feeding_path"]]
+    
+    # --------------------------------------Grab zero-centering values------------------------------ #
+    # MaxDepth
+    MaxDepth_mu = np.mean(np.log(ndata['DepthRangeDeep'].values))
+    # TL
+    TL_mu = np.mean(ndata['trophic_level'].values)
+    # Species maximum length
+    LMax_mu = np.mean(np.log(ndata['Lmax'].values))
+    # Growth coefficient
+    K_mu = np.mean(ndata['K'].values)
+    # Age at maturity
+    tm_mu = np.mean(np.log(ndata['tm'].values))
     
     # --------------------------------------Loop over nutrients------------------------------------------------------------------ #
     # List available nutrients
@@ -98,7 +146,7 @@ if __name__ == '__main__':
                 REZ_I = REZ['Intercept'].values
             
             # Calculate posterior predictions for species i
-            μ_ = REZ_I+REZ[tmp['DemersPelag']].values+REZ[tmp['EnvTemp']].values+REZ['MaxDepth'].values*np.log(tmp['DepthRangeDeep'])+REZ['TL'].values*tmp['trophic_level']+REZ[tmp['Feeding_path']]+REZ['LMax'].values*np.log(tmp['Lmax'])+REZ[tmp['BodyShape']].values+REZ['K'].values*tmp['K']+REZ['tm'].values*np.log(tmp['tm'])
+            μ_ = REZ_I+REZ[tmp['DemersPelag']].values+REZ[tmp['EnvTemp']].values+REZ[tmp['environment']].values+REZ['TL'].values*(tmp['trophic_level']-TL_mu)+REZ[tmp['Feeding_path']]+REZ['LMax'].values*(np.log(tmp['Lmax'])-LMax_mu)+REZ[tmp['BodyShape']].values+REZ['tm'].values*(np.log(tmp['tm'])-tm_mu)+REZ['wet'].values+REZ['muscle'].values
             
             if nut=='Protein':
                 μ = μ_
@@ -132,9 +180,6 @@ if __name__ == '__main__':
     print('Done')
 
     # --------------------------------------Compare observed and predicted------------------------------------------------------------------ #
-    # Nutrients data
-    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/all_nutrients_active.csv?token=AADMXIQD27LBYKN3NQ2EPTLAUJHHS')
-    
     # List available nutrients
     Nutrients =  ndata.nutrient.unique()
     # Number of nutrients
@@ -161,4 +206,3 @@ if __name__ == '__main__':
     fig.tight_layout()
     fig.subplots_adjust(top=0.95)
     plt.savefig('Species_Obs_predictions.jpg',dpi=300)
-

@@ -50,10 +50,9 @@ if __name__ == '__main__':
     # --------------------------------------Import data------------------------------------------------------------------ #
 
     # Nutrients data
-    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/all_nutrients_active.csv?token=AADMXIS6XUOXXHBRUYHXE33ATZKZY')
+    ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_nutrients_active.csv')
     # Traits data
-    #tdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/traits_for_predictions.csv?token=AADMXIUIIZPXB35P3LVUMCLAT27L6')
-    tdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/FishNutrients_sandbox/main/data/all_traits_active.csv?token=AADMXIXKXDTAKEOBCKYQM53AT27KI')
+    tdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_traits_active.csv')
     
     # --------------------------------------Merge data------------------------------------------------------------------ #
 
@@ -62,14 +61,23 @@ if __name__ == '__main__':
     rindx = match(ndata.spec_code,list(ndata.spec_code.unique()))
 
     # Traits to port over
-    tmp = ['Class', 'Order', 'Family','Genus', 'DemersPelag','EnvTemp', 'DepthRangeDeep', 'trophic_level', 'Feeding_path', 'Lmax','BodyShape', 'K', 'tm']
+    tmp = ['Class', 'Order', 'Family','Genus', 'DemersPelag','EnvTemp', 'DepthRangeDeep', 'trophic_level', 'Feeding_path', 'Lmax','BodyShape', 'K', 'tm', 'environment']
 
     # Port over
     for trait in tmp:
         ndata[trait] = tdata[trait].values[indx][rindx]
 
-
-    # --------------------------------------Full category list (in case of missing values)------------------------------ #
+    # --------------------------------------Combine pelagic categories------------------------------ #
+    #bathydemersal / demersal -> demersal
+    ndata['DemersPelag'] = ndata['DemersPelag'].replace(['bathydemersal'],'demersal')
+    #pelagic / pelagic_neritic / pelagic_oceanic -> pelagic
+    ndata['DemersPelag'] = ndata['DemersPelag'].replace(['pelagic_neritic'],'pelagic')
+    ndata['DemersPelag'] = ndata['DemersPelag'].replace(['pelagic_oceanic'],'pelagic')
+    #benthopelagic    -> no change
+    #reef_associated -> no change
+    ndata['Feeding_path'] = [x+'_path' for x in ndata["Feeding_path"]]
+    
+    # --------------------------------------Covariates------------------------------ #
     # Habitat type
     Habitat = list(np.sort(pd.unique(ndata["DemersPelag"])))
     nhabs = len(Habitat)
@@ -81,9 +89,25 @@ if __name__ == '__main__':
     # Feeding pathway
     FeedingPath = list(np.sort(pd.unique(ndata["Feeding_path"])))
 
+    # Environment
+    Environment = list(np.sort(pd.unique(ndata["environment"])))
+    nenvi = len(Environment)
+
     # Species body shape
     BodyShape = list(np.sort(pd.unique(ndata["BodyShape"])))
     nbod = len(BodyShape)
+    
+    # Grab parameter mean values
+    # MaxDepth
+    MaxDepth_mu = np.mean(np.log(ndata['DepthRangeDeep'].values))
+    # TL
+    TL_mu = np.mean(ndata['trophic_level'].values)
+    # Species maximum length
+    LMax_mu = np.mean(np.log(ndata['Lmax'].values))
+    # Growth coefficient
+    K_mu = np.mean(ndata['K'].values)
+    # Age at maturity
+    tm_mu = np.mean(np.log(ndata['tm'].values))
 
     # --------------------------------------Loop over nutrients------------------------------------------------------------------ #
     # List available nutrients
@@ -128,30 +152,34 @@ if __name__ == '__main__':
         #Ih,Habitat = pd.factorize(tmpdata["DemersPelag"], sort=True)
         Ih = np.array([Habitat.index(x) for x in tmpdata["DemersPelag"]])
     
-        # Environment type
+        # Climate type
         #Ic,Climate = pd.factorize(tmpdata["EnvTemp"], sort=True)
         Ic = np.array([Climate.index(x) for x in tmpdata["EnvTemp"]])    
+        
+        # Environment
+        Ie = np.array([Environment.index(x) for x in tmpdata["environment"]]) 
+        
         # Species max depth
-        MaxDepth = np.log(tmpdata['DepthRangeDeep'].values)
+        MaxDepth = np.log(tmpdata['DepthRangeDeep'].values)-MaxDepth_mu
     
         # Trophic level
-        TL = tmpdata['trophic_level'].values
+        TL = tmpdata['trophic_level'].values-TL_mu
     
         # Feeding pathway
         #If,FeedingPath = pd.factorize(tmpdata["Feeding_path"], sort=True)
         If = np.array([FeedingPath.index(x) for x in tmpdata["Feeding_path"]])
 
         # Species maximum length
-        LMax = np.log(tmpdata['Lmax'].values)
+        LMax = np.log(tmpdata['Lmax'].values)-LMax_mu
 
         # Species body shape
         #Ib,BodyShape = pd.factorize(tmpdata["BodyShape"], sort=True)
         Ib = np.array([BodyShape.index(x) for x in tmpdata["BodyShape"]])
     
         # Growth coefficient
-        K = tmpdata['K'].values
+        K = tmpdata['K'].values-K_mu
         # Age at maturity
-        tm = np.log(tmpdata['tm'].values)
+        tm = np.log(tmpdata['tm'].values)-tm_mu
 
         ## Nussiance parameters
         # Form of sample
@@ -164,8 +192,8 @@ if __name__ == '__main__':
 
         # --------------------------------------Specify Bayesian model------------------------------------------------------------------ #
         # Labelling for ArViz
-        coords = {'Class':Class, 'Order':Order, 'Family':Family, 'Genus':Genus,'Habitat': Habitat, 'Climate': Climate, 'FeedingPath': FeedingPath, 
-        'BodyShape': BodyShape, 'Form': Form, 'Prep': Prep}
+        coords = {'Class':Class, 'Order':Order, 'Family':Family, 'Genus':Genus, 'Climate': Climate, 'FeedingPath': FeedingPath, 'Environment':Environment,
+        'BodyShape': BodyShape, 'Habitat': Habitat, 'Form': Form, 'Prep': Prep}
 
         # Regularizing prior standard deviation for Normals
         Nsd = 1
@@ -206,7 +234,7 @@ if __name__ == '__main__':
             # Climate
             β2 = pm.Normal('Climate_x', 0, Nsd, dims='Climate')
             # Maximum Depth
-            β3 = pm.Normal('MaxDepth', 0, Nsd)
+            #β3 = pm.Normal('MaxDepth', 0, Nsd)
             # Total Length
             β4 = pm.Normal('TL', 0, Nsd)
             # Pelagic/demersal
@@ -216,16 +244,20 @@ if __name__ == '__main__':
             # Body form
             β7 = pm.Normal('BodyShape_x', 0, Nsd/2, dims='BodyShape')
             # Growth parameter
-            β8 = pm.Normal('K', 0, Nsd)
+            #β8 = pm.Normal('K', 0, Nsd)
             # Age at maturity
             β9 = pm.Normal('tm', 0, Nsd)
             # Form of sample
             β10 = pm.Normal('Form_x', 0, Nsd, dims='Form')
             # Form of prepartion
             β11 = pm.Normal('Prep_x', 0, Nsd, dims='Prep')
+            # Environment
+            β12 = pm.Normal('Environment_x', 0, Nsd, dims='Environment')
     
             # Mean model
-            μ_ = β0_g[Ige]+β1[Ih]+β2[Ic]+β3*MaxDepth+β4*TL+β5[If]+β6*LMax+β7[Ib]+β8*K+β9*tm+β10[Im]+β11[Ip]
+            #μ_ = β0_g[Ige]+β1[Ih]+β2[Ic]+β3*MaxDepth+β4*TL+β5[If]+β6*LMax+β7[Ib]+β8*K+β9*tm+β10[Im]+β11[Ip]
+            μ_ = β0_g[Ige]+β1[Ih]+β2[Ic]+β4*TL+β5[If]+β7[Ib]+β6*LMax+β9*tm+β10[Im]+β11[Ip]+β12[Ie]
+            
     
             # Data likelihood
             if nut in ['Protein']:
@@ -273,6 +305,7 @@ if __name__ == '__main__':
             colnames[match(grep('Order',list(colnames)),list(colnames))] = Order
             colnames[match(grep('Family',list(colnames)),list(colnames))] = Family
             colnames[match(grep('Genus',list(colnames)),list(colnames))] = Genus
+            colnames[match(grep('Environment',list(colnames)),list(colnames))] = Environment
 
             if len(coords['Class'])>1:
                 colnames[match(grep('Class',list(colnames)),list(colnames))] = Class
@@ -292,6 +325,7 @@ if __name__ == '__main__':
             colnames[match(grep('Order',list(colnames)),list(colnames))] = Order
             colnames[match(grep('Family',list(colnames)),list(colnames))] = Family
             colnames[match(grep('Genus',list(colnames)),list(colnames))] = Genus
+            colnames[match(grep('Environment',list(colnames)),list(colnames))] = Environment
 
             if len(coords['Class'])>1:
                 colnames[match(grep('Class',list(colnames)),list(colnames))] = Class
