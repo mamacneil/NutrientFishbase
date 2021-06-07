@@ -572,7 +572,6 @@
 "Neoceratias spinifer","Neoceratias","Neoceratiidae","Lophiiformes","Actinopterygii",4573,"demersal","polar_deep","marine","pelagic","fusiform",1200,6,3.93,0.260428862413889,2.55930893444202
 "Neochelon falcipinnis","Neochelon","Mugilidae","Mugiliformes","Actinopterygii",5465,"demersal","tropical","mixed","benthic","fusiform",25,41,2.9,0.41,1.8
 "Neoepinnula orientalis","Neoepinnula","Gempylidae","Perciformes","Actinopterygii",3906,"benthopelagic","polar_deep","marine","benthic","fusiform",570,30,4.2,0.48,1.5
-"Neolissochilus hexagonolepis","Neolissochilus","Cyprinidae","Cypriniformes","Actinopterygii",12125,"benthopelagic","tropical","freshwater","benthic","fusiform",2,120,3,0.292563554606402,1.82318044592642
 "Neolissochilus soroides","Neolissochilus","Cyprinidae","Cypriniformes","Actinopterygii",27086,"benthopelagic","tropical","freshwater","benthic","elongate",2,45,2.8,0.18,3.8
 "Neomerinthe hemingwayi","Neomerinthe","Scorpaenidae","Scorpaeniformes","Actinopterygii",3930,"demersal","subtropical","marine","benthic","fusiform",230,40,3.76,0.14,4.9
 "Neosalanx tangkahkeii","Neosalanx","Salangidae","Osmeriformes","Actinopterygii",54884,"demersal","subtropical","mixed","benthic","elongate",1686.22,6.3,3.4,1.71,0.5
@@ -801,8 +800,6 @@
 "Schizothorax esocinus","Schizothorax","Cyprinidae","Cypriniformes","Actinopterygii",24430,"benthopelagic","tropical","freshwater","benthic","elongate",2.5,50.8,2,0.292563554606402,1.82318044592642
 "Schizothorax plagiostomus","Schizothorax","Cyprinidae","Cypriniformes","Actinopterygii",54512,"benthopelagic","subtropical","freshwater","benthic","fusiform",2.5,41.5,2.8,0.292563554606402,1.82318044592642
 "Schizothorax progastus","Schizothorax","Cyprinidae","Cypriniformes","Actinopterygii",13244,"benthopelagic","tropical","freshwater","benthic","fusiform",2.5,50,2.9,0.292563554606402,1.82318044592642
-"Schizothorax richardsonii","Schizothorax","Cyprinidae","Cypriniformes","Actinopterygii",8705,"demersal","tropical","freshwater","benthic","fusiform",2.5,60,2,0.292563554606402,1.82318044592642
-"Sciades herzbergii","Sciades","Ariidae","Siluriformes","Actinopterygii",951,"demersal","tropical","mixed","benthic","elongate",40,94.2,3.3,0.318852612038418,2.52806770837152
 "Sciaena deliciosa","Sciaena","Sciaenidae","Perciformes","Actinopterygii",53708,"demersal","tropical","marine","benthic","fusiform",200,26,3.75,0.59,1.3
 "Scoliodon laticaudus","Scoliodon","Carcharhinidae","Carcharhiniformes","Elasmobranchii",906,"demersal","tropical","mixed","benthic","fusiform",13,100,3.8,0.56,1.2
 "Scomberomorus plurilineatus","Scomberomorus","Scombridae","Perciformes","Actinopterygii",132,"pelagic_neritic","subtropical","marine","pelagic","fusiform",200,120,4.2,0.59,1.1
@@ -886,7 +883,6 @@
 "Thynnichthys vaillanti","Thynnichthys","Cyprinidae","Cypriniformes","Actinopterygii",22686,"demersal","tropical","freshwater","benthic","fusiform",23.75,26.4,2.8,0.3,2.4
 "Tilesina gibbosa","Tilesina","Agonidae","Scorpaeniformes","Actinopterygii",24003,"demersal","temperate","marine","benthic","elongate",400,36,3.24,0.2,3.5
 "Tomicodon bidens","Tomicodon","Gobiesocidae","Gobiesociformes","Actinopterygii",46478,"demersal","tropical","marine","benthic","elongate",6,2.8,3,0.8,1.3
-"Tor putitora","Tor","Cyprinidae","Cypriniformes","Actinopterygii",9194,"benthopelagic","subtropical","freshwater","benthic","fusiform",23.75,275,2.9,0.07,3.87121626726734
 "Torpedo torpedo","Torpedo","Torpedinidae","Torpediniformes","Elasmobranchii",2062,"demersal","polar_deep","marine","pelagic","fusiform",400,60,4.5,0.11,6.2
 "Toxotes chatareus","Toxotes","Toxotidae","Perciformes","Actinopterygii",8079,"pelagic","tropical","mixed","pelagic","short_deep",175.48,40,4,0.31,2.2
 "Trachinotus africanus","Trachinotus","Carangidae","Perciformes","Actinopterygii",1967,"reef_associated","tropical","mixed","benthic","short_deep",50,92,3.3,0.21,3
@@ -932,433 +928,47 @@
 "Zu elongatus","Zu","Trachipteridae","Lampriformes","Actinopterygii",10665,"bathypelagic","polar_deep","marine","benthic","elongate",90,120,4,0.16,3.8
 "Zungaro jahu","Zungaro","Pimelodidae","Siluriformes","Actinopterygii",63393,"benthopelagic","tropical","freshwater","pelagic","elongate",26.75,140,4.5,0.11,5.3
 "Zungaro zungaro","Zungaro","Pimelodidae","Siluriformes","Actinopterygii",47756,"demersal","tropical","freshwater","pelagic","fusiform",26.75,140,4.5,0.246141792955633,2.79674507414537
-"Acanthistius_brasilianus","Acanthistius","Serranidae","Perciformes","Actinopterygii",351,"benthopelagic","subtropical","mixed","benthic","fusiform",78,60,4,0.18,3.6
-"Acanthurus_mata","Acanthurus","Acanthuridae","Perciformes","Actinopterygii",1255,"reef_associated","tropical","marine","benthic","short_deep",100,50,2.5,0.22,3.2
-"Aethaloperca_rogaa","Aethaloperca","Serranidae","Perciformes","Actinopterygii",6441,"reef_associated","tropical","marine","pelagic","short_deep",60,60,4.2,0.18,3.6
-"Aetomylaeus_bovinus","Aetomylaeus","Myliobatidae","Myliobatiformes","Elasmobranchii",5011,"benthopelagic","subtropical","mixed","benthic","flat",150,222,3.8,0.21,2.7
-"Albatrossia_pectoralis","Albatrossia","Macrouridae","Gadiformes","Actinopterygii",8435,"bathydemersal","polar_deep","marine","benthic","elongate",3500,210,4.3,0.13,4.6
-"Aldrichetta_forsteri","Aldrichetta","Mugilidae","Mugiliformes","Actinopterygii",12938,"demersal","temperate","mixed","benthic","fusiform",50,50,2.5,0.51,1.4
-"Alectis_alexandrina","Alectis","Carangidae","Perciformes","Actinopterygii",1888,"pelagic_neritic","subtropical","marine","benthic","short_deep",70,100,3.6,0.19,3.2
-"Alepocephalus_agassizii","Alepocephalus","Alepocephalidae","Osmeriformes","Actinopterygii",9171,"bathydemersal","polar_deep","marine","benthic","elongate",2500,123,3.9,0.06,9.9
-"Alepocephalus_bairdii","Alepocephalus","Alepocephalidae","Osmeriformes","Actinopterygii",230,"bathydemersal","polar_deep","marine","pelagic","elongate",1700,100,3.7,0.08,7.6
-"Alosa_alosa","Alosa","Clupeidae","Clupeiformes","Actinopterygii",101,"pelagic_neritic","temperate","mixed","pelagic","fusiform",300,69,3,0.27,2.4
-"Alosa_fallax","Alosa","Clupeidae","Clupeiformes","Actinopterygii",5355,"pelagic_neritic","temperate","mixed","benthic","fusiform",400,60,4,0.22,3
-"Alosa_immaculata","Alosa","Clupeidae","Clupeiformes","Actinopterygii",105,"pelagic_neritic","temperate","mixed","benthic","fusiform",90,39,4,0.32,2.2
-"Alosa_sapidissima","Alosa","Clupeidae","Clupeiformes","Actinopterygii",1584,"pelagic_neritic","subtropical","mixed","benthic","fusiform",250,76,3.5,0.2,3.2
-"Aluterus_monoceros","Aluterus","Monacanthidae","Tetraodontiformes","Actinopterygii",4274,"reef_associated","subtropical","marine","benthic","short_deep",80,76.2,3.8,0.22,3
-"Amblygaster_sirm","Amblygaster","Clupeidae","Clupeiformes","Actinopterygii",1501,"reef_associated","tropical","mixed","pelagic","fusiform",75,27,2.9,1.14,0.7
-"Ammodytes_hexapterus","Ammodytes","Ammodytidae","Perciformes","Actinopterygii",3822,"benthopelagic","temperate","mixed","pelagic","elongate",275,30,3.1,0.15,5
-"Anarhichas_lupus","Anarhichas","Anarhichadidae","Perciformes","Actinopterygii",2501,"demersal","temperate","marine","benthic","elongate",600,150,3.6,0.12,5.1
-"Anchoa_hepsetus","Anchoa","Engraulidae","Clupeiformes","Actinopterygii",1133,"pelagic_neritic","subtropical","mixed","benthic","elongate",70,15.3,3.3,0.8,1
-"Anguilla_anguilla","Anguilla","Anguillidae","Anguilliformes","Actinopterygii",35,"demersal","temperate","mixed","benthic","elongate",700,121.5,3.6,0.09,6.9
-"Anguilla_japonica","Anguilla","Anguillidae","Anguilliformes","Actinopterygii",295,"demersal","subtropical","mixed","benthic","elongate",400,150,3.6,0.07,8.8
-"Anguilla_rostrata","Anguilla","Anguillidae","Anguilliformes","Actinopterygii",296,"demersal","subtropical","mixed","benthic","elongate",464,152,3.8,0.08,7.9
-"Anoplopoma_fimbria","Anoplopoma","Anoplopomatidae","Scorpaeniformes","Actinopterygii",512,"bathydemersal","polar_deep","marine","pelagic","fusiform",2740,120,3.8,0.21,3
-"Aphanopus_carbo","Aphanopus","Trichiuridae","Perciformes","Actinopterygii",646,"bathypelagic","polar_deep","marine","pelagic","elongate",2300,151,4.5,0.17,3.5
-"Aprion_virescens","Aprion","Lutjanidae","Perciformes","Actinopterygii",84,"reef_associated","tropical","marine","pelagic","fusiform",180,112,4.3,0.14,4.3
-"Argyrosomus_hololepidotus","Argyrosomus","Sciaenidae","Perciformes","Actinopterygii",419,"demersal","subtropical","mixed","benthic","fusiform",400,200,4.5,0.1,5.6
-"Ariomma_bondi","Ariomma","Ariommatidae","Perciformes","Actinopterygii",961,"demersal","subtropical","marine","benthic","fusiform",500,30,3.5,0.74,0.7
-"Arius_maculatus","Arius","Ariidae","Siluriformes","Actinopterygii",1280,"demersal","tropical","mixed","benthic","fusiform",100,80,3.4,0.41,1.6
-"Arripis_trutta","Arripis","Arripidae","Perciformes","Actinopterygii",5048,"pelagic_neritic","subtropical","mixed","pelagic","fusiform",39,89,4.1,0.29,2.3
-"Atheresthes_stomias","Atheresthes","Pleuronectidae","Pleuronectiformes","Actinopterygii",517,"demersal","polar_deep","marine","pelagic","short_deep",950,84,4.2,0.1,6.4
+"Ammodytes hexapterus","Ammodytes","Ammodytidae","Perciformes","Actinopterygii",3822,"benthopelagic","temperate","mixed","pelagic","elongate",275,30,3.1,0.15,5
 "Atherina","Atherina","Atherinidae","Atheriniformes","Actinopterygii",164,"pelagic_neritic","subtropical","marine","benthic","elongate",9.47,15.8,3.43,0.382,2.72
-"Atherina_boyeri","Atherina","Atherinidae","Atheriniformes","Actinopterygii",1696,"demersal","subtropical","mixed","benthic","elongate",9.47,20,3.2,0.16,4.9
-"Auxis_rochei","Auxis","Scombridae","Perciformes","Actinopterygii",93,"pelagic_neritic","tropical","mixed","pelagic","fusiform",319.71,50,4.4,0.61,1.1
-"Auxis_thazard","Auxis","Scombridae","Perciformes","Actinopterygii",94,"pelagic_neritic","tropical","marine","pelagic","fusiform",319.71,65,4.4,0.95,0.7
-"Balistes_capriscus","Balistes","Balistidae","Tetraodontiformes","Actinopterygii",7327,"reef_associated","subtropical","marine","benthic","short_deep",100,60,4.1,0.34,2
-"Bassanago_albescens","Bassanago","Congridae","Anguilliformes","Actinopterygii",15663,"bathydemersal","polar_deep","marine","benthic","elongate",1700,100,3.9,0.17,3.6
-"Bathylagus_antarcticus","Bathylagus","Bathylagidae","Osmeriformes","Actinopterygii",6960,"pelagic_oceanic","polar_deep","marine","benthic","elongate",4000,14,3.1,0.17,4.7
-"Bathyraja_brachyurops","Bathyraja","Arhynchobatidae","Rajiformes","Elasmobranchii",51184,"demersal","temperate","marine","pelagic","flat",313,64.2,4.1,0.12,5.4
-"Bathyraja_macloviana","Bathyraja","Arhynchobatidae","Rajiformes","Elasmobranchii",52474,"demersal","temperate","marine","pelagic","flat",1382.62,1,3.4,0.07,18.1
-"Bathyraja_scaphiops","Bathyraja","Arhynchobatidae","Rajiformes","Elasmobranchii",52472,"demersal","temperate","marine","pelagic","flat",500,111,4.3,0.08,7.5
-"Belone_belone","Belone","Belonidae","Beloniformes","Actinopterygii",47,"pelagic_oceanic","temperate","mixed","pelagic","elongate",13.17,103.5,4.2,0.34,2
-"Benthosema_fibulatum","Benthosema","Myctophidae","Myctophiformes","Actinopterygii",7423,"bathypelagic","polar_deep","marine","pelagic","fusiform",2000,10,3.2,2.81,0.3
-"Benthosema_pterotum","Benthosema","Myctophidae","Myctophiformes","Actinopterygii",10238,"benthopelagic","polar_deep","marine","pelagic","fusiform",300,7,3.1,1.81,0.5
-"Beringraja_binoculata","Beringraja","Rajidae","Rajiformes","Elasmobranchii",2556,"demersal","temperate","marine","benthic","flat",800,244,3.9,0.06,9.1
-"Boops_boops","Boops","Sparidae","Perciformes","Actinopterygii",203,"demersal","subtropical","marine","pelagic","fusiform",350,40,2.8,0.15,4.7
-"Bothus_podas","Bothus","Bothidae","Pleuronectiformes","Actinopterygii",207,"demersal","subtropical","marine","benthic","short_deep",400,45,3.4,0.14,4.9
-"Brama_brama","Brama","Bramidae","Perciformes","Actinopterygii",391,"pelagic_neritic","subtropical","marine","pelagic","short_deep",1000,100,4.1,0.08,8
-"Brama_japonica","Brama","Bramidae","Perciformes","Actinopterygii",3555,"pelagic_oceanic","subtropical","marine","pelagic","short_deep",620,61,4.4,0.18,3.6
-"Bregmaceros_mcclellandi","Bregmaceros","Bregmacerotidae","Gadiformes","Actinopterygii",8421,"pelagic_oceanic","subtropical","mixed","pelagic","elongate",2000,9.6,3.3,0.25,3.68
-"Brevoortia_aurea","Brevoortia","Clupeidae","Clupeiformes","Actinopterygii",1587,"pelagic_neritic","subtropical","marine","benthic","fusiform",50,34.4,2.8,0.46,1.5
-"Callorhinchus_callorynchus","Callorhinchus","Callorhinchidae","Chimaeriformes","Holocephali",8399,"demersal","subtropical","marine","benthic","elongate",116,89.2,3.4,0.21,3
-"Calotomus_carolinus","Calotomus","Scaridae","Perciformes","Actinopterygii",4355,"reef_associated","tropical","marine","benthic","fusiform",71,54,2,0.96,0.7
-"Cantherhines_pardalis","Cantherhines","Monacanthidae","Tetraodontiformes","Actinopterygii",6635,"reef_associated","tropical","marine","benthic","short_deep",20,25,3.5,0.39,1.9
-"Carangoides_fulvoguttatus","Carangoides","Carangidae","Perciformes","Actinopterygii",1926,"reef_associated","tropical","marine","benthic","fusiform",100,120,4.4,0.15,4
-"Carangoides_orthogrammus","Carangoides","Carangidae","Perciformes","Actinopterygii",1909,"reef_associated","tropical","marine","pelagic","fusiform",168,75,4.5,0.25,2.5
-"Carangoides_plagiotaenia","Carangoides","Carangidae","Perciformes","Actinopterygii",1910,"reef_associated","tropical","marine","benthic","fusiform",200,50,4,0.37,1.8
-"Caranx_crysos","Caranx","Carangidae","Perciformes","Actinopterygii",1933,"reef_associated","subtropical","mixed","benthic","fusiform",100,70,4.1,0.38,1.8
-"Caranx_hippos","Caranx","Carangidae","Perciformes","Actinopterygii",71,"reef_associated","subtropical","mixed","benthic","fusiform",350,124,3.6,0.35,1.8
-"Caranx_melampygus","Caranx","Carangidae","Perciformes","Actinopterygii",1906,"reef_associated","tropical","mixed","pelagic","fusiform",190,117,4.5,0.19,3.3
-"Caranx_rhonchus","Caranx","Carangidae","Perciformes","Actinopterygii",1899,"benthopelagic","subtropical","mixed","pelagic","fusiform",200,60,3.6,0.3,2.3
-"Carcharhinus_limbatus","Carcharhinus","Carcharhinidae","Carcharhiniformes","Elasmobranchii",874,"reef_associated","subtropical","mixed","pelagic","fusiform",100,275,4.4,0.27,2.1
-"Caulolatilus_intermedius","Caulolatilus","Malacanthidae","Perciformes","Actinopterygii",986,"demersal","subtropical","marine","benthic","fusiform",290,60,3.8,0.17,3.9
-"Centrophorus_squamosus","Centrophorus","Centrophoridae","Squaliformes","Elasmobranchii",653,"bathydemersal","polar_deep","marine","pelagic","elongate",2400,164,4.5,0.05,11.7
-"Centropomus_parallelus","Centropomus","Centropomidae","Perciformes","Actinopterygii",1014,"demersal","subtropical","mixed","pelagic","fusiform",22,72,4.2,0.19,3.5
-"Centroscyllium_fabricii","Centroscyllium","Etmopteridae","Squaliformes","Elasmobranchii",656,"bathydemersal","polar_deep","marine","pelagic","elongate",1146.4,107,3.8,0.09,14.2
-"Centroscymnus_coelolepis","Centroscymnus","Somniosidae","Squaliformes","Elasmobranchii",662,"bathydemersal","polar_deep","marine","pelagic","elongate",3700,120,4.5,0.01,58.5
-"Cephalopholis_argus","Cephalopholis","Serranidae","Perciformes","Actinopterygii",6396,"reef_associated","tropical","marine","pelagic","fusiform",40,60,4.5,0.18,3.6
-"Cephalopholis_miniata","Cephalopholis","Serranidae","Perciformes","Actinopterygii",6450,"reef_associated","tropical","marine","pelagic","fusiform",150,50,4.3,0.1,6.8
-"Cephalopholis_sonnerati","Cephalopholis","Serranidae","Perciformes","Actinopterygii",6454,"reef_associated","tropical","marine","benthic","fusiform",150,57,3.8,0.19,3.5
-"Cephalopholis_taeniops","Cephalopholis","Serranidae","Perciformes","Actinopterygii",4936,"demersal","tropical","marine","benthic","fusiform",200,70,4.21,0.14,4.8
-"Chaenocephalus_aceratus","Chaenocephalus","Channichthyidae","Perciformes","Actinopterygii",473,"demersal","polar_deep","marine","pelagic","elongate",770,72,3.4,0.23,2.9
-"Champsocephalus_gunnari","Champsocephalus","Channichthyidae","Perciformes","Actinopterygii",474,"benthopelagic","polar_deep","marine","pelagic","elongate",700,66,3.2,0.39,1.8
-"Cheilinus_fasciatus","Cheilinus","Labridae","Perciformes","Actinopterygii",5600,"reef_associated","tropical","marine","benthic","fusiform",60,40,3.4,0.18,3.8
-"Cheilinus_trilobatus","Cheilinus","Labridae","Perciformes","Actinopterygii",5603,"reef_associated","tropical","mixed","benthic","short_deep",30,45,3.9,0.19,3.6
-"Chelidonichthys_cuculus","Chelidonichthys","Triglidae","Scorpaeniformes","Actinopterygii",44,"demersal","temperate","marine","benthic","fusiform",400,70,3.8,0.24,2.9
-"Chelidonichthys_lucerna","Chelidonichthys","Triglidae","Scorpaeniformes","Actinopterygii",1366,"demersal","subtropical","marine","benthic","elongate",318,75.1,4,0.15,4.3
-"Chelinus_undulates","Cheilinus","Labridae","Perciformes","Actinopterygii",5604,"reef_associated","tropical","marine","benthic","fusiform",100,229,4,0.04,14
-"Chelon_labrosus","Chelon","Mugilidae","Mugiliformes","Actinopterygii",2499,"demersal","subtropical","mixed","benthic","elongate",20,75,2.6,0.22,3
-"Chelon_parsia","Chelon","Mugilidae","Mugiliformes","Actinopterygii",4668,"demersal","tropical","mixed","benthic","fusiform",20,16,2,0.6,1.3
-"Chirocentrus_dorab","Chirocentrus","Chirocentridae","Clupeiformes","Actinopterygii",6358,"reef_associated","tropical","mixed","pelagic","elongate",120,100,4.4,0.17,3.6
-"Chlorurus_sordidus","Chlorurus","Scaridae","Perciformes","Actinopterygii",5556,"reef_associated","tropical","mixed","benthic","fusiform",50,40,2.6,1.21,0.7
-"Clupea_harengus","Clupea","Clupeidae","Clupeiformes","Actinopterygii",24,"benthopelagic","temperate","mixed","pelagic","fusiform",364,45,3.4,0.41,1.8
-"Clupea_pallasii_pallasii","Clupea","Clupeidae","Clupeiformes","Actinopterygii",1520,"pelagic_neritic","temperate","mixed","pelagic","fusiform",475,46,3.31,0.93,1.41
-"Clupeonella_caspia","Clupeonella","Clupeidae","Clupeiformes","Actinopterygii",65307,"pelagic_neritic","temperate","mixed","pelagic","fusiform",41,14.9,3,0.94,0.9
-"Clupeonella_cultriventris","Clupeonella","Clupeidae","Clupeiformes","Actinopterygii",1470,"pelagic_neritic","temperate","mixed","pelagic","fusiform",13,14.5,3,0.24,3.3
-"Coelorinchus_fasciatus","Coelorinchus","Macrouridae","Gadiformes","Actinopterygii",7131,"bathydemersal","polar_deep","marine","pelagic","elongate",1086,50,3.9,0.16,4.2
-"Coilia_dussumieri","Coilia","Engraulidae","Clupeiformes","Actinopterygii",625,"pelagic_neritic","tropical","mixed","pelagic","elongate",50,20,3.3,1.15,0.7
-"Congiopodus_peruvianus","Congiopodus","Congiopodidae","Scorpaeniformes","Actinopterygii",8398,"demersal","subtropical","marine","benthic","fusiform",340.67,27.2,3.78,0.32,3.42
+"Benthosema fibulatum","Benthosema","Myctophidae","Myctophiformes","Actinopterygii",7423,"bathypelagic","polar_deep","marine","pelagic","fusiform",2000,10,3.2,2.81,0.3
+"Chelinus undulates","Cheilinus","Labridae","Perciformes","Actinopterygii",5604,"reef_associated","tropical","marine","benthic","fusiform",100,229,4,0.04,14
+"Clupeonella caspia","Clupeonella","Clupeidae","Clupeiformes","Actinopterygii",65307,"pelagic_neritic","temperate","mixed","pelagic","fusiform",41,14.9,3,0.94,0.9
 "Coregonus","Coregonus","Salmonidae","Salmoniformes","Actinopterygii",7065,"demersal","temperate","marine","benthic","fusiform",110.8823529,42.17599998,3.441666667,0.259585949,3.294673975
-"Coregonus_albula","Coregonus","Salmonidae","Salmoniformes","Actinopterygii",231,"benthopelagic","temperate","mixed","pelagic","fusiform",110.88,48,3.1,0.53,1.4
-"Coregonus_autumnalis","Coregonus","Salmonidae","Salmoniformes","Actinopterygii",2669,"pelagic_neritic","polar_deep","mixed","benthic","fusiform",110.88,65,3.7,0.22,3.1
-"Corica_soborna","Corica","Clupeidae","Clupeiformes","Actinopterygii",1566,"pelagic_neritic","tropical","mixed","pelagic","fusiform",76.42,5.3,3.35,2.62,0.4
-"Coris_formosa","Coris","Labridae","Perciformes","Actinopterygii",7736,"reef_associated","tropical","marine","benthic","fusiform",49.68,60,3.3,0.15,4.4
-"Cottoperca_gobio","Cottoperca","Bovichtidae","Perciformes","Actinopterygii",51212,"demersal","subtropical","marine","pelagic","fusiform",13,80,4.3,0.74,2.01
-"Cottunculus_granulosus","Cottunculus","Psychrolutidae","Scorpaeniformes","Actinopterygii",51209,"bathydemersal","polar_deep","marine","benthic","elongate",1250,21.7,4.14,0.32,3.42
-"Ctenochaetus_binotatus","Ctenochaetus","Acanthuridae","Perciformes","Actinopterygii",6012,"reef_associated","tropical","marine","benthic","short_deep",53,22,2,0.61,1.2
-"Ctenochaetus_striatus","Ctenochaetus","Acanthuridae","Perciformes","Actinopterygii",1262,"reef_associated","tropical","marine","benthic","short_deep",35,26,2,0.8,1
-"Cyclopterus_lumpus","Cyclopterus","Cyclopteridae","Scorpaeniformes","Actinopterygii",62,"benthopelagic","polar_deep","marine","pelagic","short_deep",868,61,3.9,0.25,2.7
-"Cynoglossus_arel","Cynoglossus","Cynoglossidae","Pleuronectiformes","Actinopterygii",7523,"demersal","tropical","mixed","benthic","elongate",125,40,3.5,0.24,2.8
-"Cynoscion_arenarius","Cynoscion","Sciaenidae","Perciformes","Actinopterygii",1170,"demersal","subtropical","mixed","pelagic","fusiform",107.06,63.5,4.2,0.31,2.3
-"Cynoscion_jamaicensis","Cynoscion","Sciaenidae","Perciformes","Actinopterygii",1171,"demersal","subtropical","mixed","benthic","fusiform",70,50,3.8,0.4,1.8
-"Cynoscion_nothus","Cynoscion","Sciaenidae","Perciformes","Actinopterygii",1175,"demersal","subtropical","mixed","benthic","fusiform",18,36,3.97,0.22,3.1
-"Cyprinus_carpio","Cyprinus","Cyprinidae","Cypriniformes","Actinopterygii",1450,"benthopelagic","subtropical","mixed","benthic","fusiform",29,120,3.1,0.28,2.3
-"Dasyatis_sabina","Hypanus","Dasyatidae","Myliobatiformes","Elasmobranchii",2574,"demersal","subtropical","marine","benthic","flat",25,61,3.5,0.16,4.6
-"Deania_calcea","Deania","Centrophoridae","Squaliformes","Elasmobranchii",670,"bathydemersal","polar_deep","marine","pelagic","elongate",1490,122,4.3,0.13,4.8
-"Decapterus_macrosoma","Decapterus","Carangidae","Perciformes","Actinopterygii",1938,"reef_associated","tropical","marine","pelagic","fusiform",214,35,3.4,0.61,1.2
-"Decapterus_punctatus","Decapterus","Carangidae","Perciformes","Actinopterygii",994,"reef_associated","subtropical","marine","benthic","fusiform",100,30,4.4,0.32,2.2
+"Dasyatis sabina","Hypanus","Dasyatidae","Myliobatiformes","Elasmobranchii",2574,"demersal","subtropical","marine","benthic","flat",25,61,3.5,0.16,4.6
 "Dentex","Dentex","Sparidae","Perciformes","Actinopterygii",1038,"demersal","subtropical","marine","pelagic","fusiform",310,51.04846162,3.8,0.352692312,3.406471154
-"Dentex_dentex","Dentex","Sparidae","Perciformes","Actinopterygii",439,"benthopelagic","subtropical","marine","benthic","fusiform",200,100,4.5,0.1,6.3
-"Dentex_maroccanus","Dentex","Sparidae","Perciformes","Actinopterygii",4538,"demersal","subtropical","marine","benthic","fusiform",500,45,3.9,0.19,3.8
-"Diagramma_pictum","Diagramma","Haemulidae","Perciformes","Actinopterygii",4465,"reef_associated","tropical","marine","benthic","fusiform",170,100,3.7,0.24,2.7
-"Diaphus_suborbitalis","Diaphus","Myctophidae","Myctophiformes","Actinopterygii",10420,"pelagic_oceanic","polar_deep","marine","pelagic","elongate",1537,7.3,3.23,1.11,0.8
-"Diaphus_watasei","Diaphus","Myctophidae","Myctophiformes","Actinopterygii",10268,"benthopelagic","subtropical","marine","pelagic","elongate",2005,17,3.23,0.8,1
-"Dicenctrarcchus_punctatus","Dicentrarchus","Moronidae","Perciformes","Actinopterygii",394,"pelagic_neritic","subtropical","marine","benthic","fusiform",100,70,3.9,0.07,8.7
-"Dicentrarchus_labrax","Dicentrarchus","Moronidae","Perciformes","Actinopterygii",63,"demersal","subtropical","mixed","pelagic","fusiform",100,103,3.5,0.2,3.3
-"Dicologlossa_cuneata","Dicologlossa","Soleidae","Pleuronectiformes","Actinopterygii",526,"demersal","subtropical","mixed","benthic","fusiform",460,30,3.3,0.38,2
-"Diplodus_annularis","Diplodus","Sparidae","Perciformes","Actinopterygii",1752,"benthopelagic","subtropical","mixed","benthic","fusiform",90,27.5,3.6,0.47,1.7
-"Diplodus_puntazzo","Diplodus","Sparidae","Perciformes","Actinopterygii",1749,"benthopelagic","subtropical","mixed","benthic","fusiform",150,60,3.2,0.36,1.8
-"Diplodus_sargus_sargus","Diplodus","Sparidae","Perciformes","Actinopterygii",1753,"demersal","subtropical","marine","benthic","fusiform",50,45,3.4,0.1,6.6
-"Diplodus_vulgaris","Diplodus","Sparidae","Perciformes","Actinopterygii",1754,"benthopelagic","subtropical","marine","benthic","fusiform",160,45,3.5,0.08,8.2
-"Discopyge_tschudii","Discopyge","Narcinidae","Torpediniformes","Elasmobranchii",8396,"demersal","subtropical","marine","benthic","flat",165,53.8,3.16,0.6,5.87
-"Dissostichus_eleginoides","Dissostichus","Nototheniidae","Perciformes","Actinopterygii",467,"pelagic_oceanic","temperate","marine","pelagic","fusiform",3850,215,4,0.12,4.9
-"Dissostichus_mawsoni","Dissostichus","Nototheniidae","Perciformes","Actinopterygii",7039,"pelagic_oceanic","polar_deep","marine","pelagic","fusiform",2200,200,3.9,0.09,6.3
-"Dussumieria_elopsoides","Dussumieria","Dussumieriidae","Clupeiformes","Actinopterygii",1454,"pelagic_neritic","subtropical","marine","pelagic","fusiform",50,20,3.4,0.55,1.3
-"Echelus_myrus","Echelus","Ophichthidae","Anguilliformes","Actinopterygii",1713,"demersal","subtropical","mixed","benthic","elongate",550,100,3.91,0.23,2.7
-"Electrona_antarctica","Electrona","Myctophidae","Myctophiformes","Actinopterygii",6984,"demersal","polar_deep","marine","pelagic","fusiform",1010,11.5,3.2,0.17,4.8
-"Electrona_carlsbergi","Electrona","Myctophidae","Myctophiformes","Actinopterygii",6985,"bathypelagic","polar_deep","marine","pelagic","elongate",1008,11.2,3.2,0.55,1.6
-"Eleotris_fusca","Eleotris","Eleotridae","Perciformes","Actinopterygii",8034,"demersal","tropical","mixed","benthic","elongate",5,26,3.8,0.35,2.1
-"Eleutheronema_tetradactylum","Eleutheronema","Polynemidae","Perciformes","Actinopterygii",340,"pelagic_neritic","tropical","mixed","pelagic","elongate",23,200,4.1,0.13,4.3
-"Elops_saurus","Elops","Elopidae","Elopiformes","Actinopterygii",175,"reef_associated","subtropical","mixed","pelagic","elongate",50,100,3.5,0.32,2
-"Encrasicholina_devisi","Encrasicholina","Engraulidae","Clupeiformes","Actinopterygii",555,"reef_associated","tropical","mixed","pelagic","elongate",13,8,3.3,2.26,0.4
-"Engraulis_encrasicolus","Engraulis","Engraulidae","Clupeiformes","Actinopterygii",66,"pelagic_neritic","subtropical","mixed","pelagic","elongate",400,20,3.1,0.4,1.9
-"Epibulus_insidiator","Epibulus","Labridae","Perciformes","Actinopterygii",5606,"reef_associated","tropical","marine","benthic","short_deep",42,54,4,0.14,4.7
+"Dicenctrarcchus punctatus","Dicentrarchus","Moronidae","Perciformes","Actinopterygii",394,"pelagic_neritic","subtropical","marine","benthic","fusiform",100,70,3.9,0.07,8.7
+"Diplodus sargus sargus","Diplodus","Sparidae","Perciformes","Actinopterygii",1753,"demersal","subtropical","marine","benthic","fusiform",50,45,3.4,0.1,6.6
 "Epinephelus","Epinephelus","Serranidae","Perciformes","Actinopterygii",7755,"reef_associated","tropical","marine","benthic","fusiform",158.1410256,83.39770115,3.943396226,0.23748276,3.834993422
-"Epinephelus_aeneus","Epinephelus","Serranidae","Perciformes","Actinopterygii",426,"demersal","subtropical","mixed","benthic","fusiform",200,120,4,0.15,3.9
-"Epinephelus_fasciatus","Epinephelus","Serranidae","Perciformes","Actinopterygii",5348,"reef_associated","tropical","mixed","benthic","fusiform",160,40,3.7,0.13,4.8
-"Epinephelus_longispinis","Epinephelus","Serranidae","Perciformes","Actinopterygii",7352,"reef_associated","tropical","marine","benthic","fusiform",70,55,4.2,0.2,3.3
-"Epinephelus_merra","Epinephelus","Serranidae","Perciformes","Actinopterygii",4923,"reef_associated","tropical","marine","pelagic","fusiform",50,32,3.8,0.65,1.1
-"Epinephelus_sexfasciatus","Epinephelus","Serranidae","Perciformes","Actinopterygii",4825,"reef_associated","tropical","marine","benthic","fusiform",80,40,3.8,0.51,1.4
-"Epinephelus_spilotoceps","Epinephelus","Serranidae","Perciformes","Actinopterygii",5837,"reef_associated","tropical","marine","benthic","fusiform",30,35,3.89,0.3,2.4
-"Epinephelus_tauvina","Epinephelus","Serranidae","Perciformes","Actinopterygii",4461,"reef_associated","subtropical","marine","pelagic","fusiform",300,100,4.1,0.17,3.7
-"Equulites_elongatus","Equulites","Leiognathidae","Perciformes","Actinopterygii",4450,"demersal","tropical","marine","benthic","fusiform",100,17.3,3.12,1.02,0.77
-"Ethmalosa_fimbriata","Ethmalosa","Clupeidae","Clupeiformes","Actinopterygii",1594,"pelagic_neritic","tropical","mixed","benthic","fusiform",76.42,46,2.5,0.97,0.8
-"Etmopterus_princeps","Etmopterus","Etmopteridae","Squaliformes","Elasmobranchii",683,"bathydemersal","polar_deep","marine","pelagic","elongate",2213,75,4.2,0.09,14.2
-"Etrumeus_sadina","Etrumeus","Dussumieriidae","Clupeiformes","Actinopterygii",1455,"pelagic_neritic","subtropical","marine","pelagic","elongate",125,33,3.6,1.65,0.5
-"Etrumeus_teres","Etrumeus","Dussumieriidae","Clupeiformes","Actinopterygii",1455,"pelagic_neritic","subtropical","marine","pelagic","elongate",125,33,3.6,1.65,0.5
-"Eubleekeria_splendens","Eubleekeria","Leiognathidae","Perciformes","Actinopterygii",4454,"demersal","tropical","mixed","benthic","short_deep",100,17,2.9,1.02,0.8
-"Euthynnus_affinis","Euthynnus","Scombridae","Perciformes","Actinopterygii",96,"pelagic_neritic","tropical","marine","pelagic","fusiform",200,100,4.5,0.56,1.1
-"Euthynnus_alletteratus","Euthynnus","Scombridae","Perciformes","Actinopterygii",97,"pelagic_oceanic","tropical","mixed","pelagic","fusiform",150,122,4.5,0.22,2.8
-"Gadus_macrocephalus","Gadus","Gadidae","Gadiformes","Actinopterygii",308,"demersal","polar_deep","mixed","benthic","fusiform",1280,119,4.2,0.27,2.3
-"Gadus_morhua","Gadus","Gadidae","Gadiformes","Actinopterygii",69,"benthopelagic","temperate","mixed","pelagic","fusiform",600,200,4.1,0.17,3.6
-"Galeichthys_feliceps","Galeichthys","Ariidae","Siluriformes","Actinopterygii",288,"demersal","subtropical","mixed","benthic","fusiform",120,55,3.8,0.18,3.7
-"Galeorhinus_galeus","Galeorhinus","Triakidae","Carcharhiniformes","Elasmobranchii",4642,"benthopelagic","subtropical","marine","pelagic","elongate",1100,193,4.3,0.12,4.8
-"Galeus_melastomus","Galeus","Scyliorhinidae","Carcharhiniformes","Elasmobranchii",807,"demersal","polar_deep","marine","benthic","elongate",1873,75,4.2,0.19,3.4
-"Gasterochisma_melampus","Gasterochisma","Scombridae","Perciformes","Actinopterygii",100,"pelagic_oceanic","subtropical","marine","pelagic","fusiform",319.71,164,4.4,0.17,3.4
-"Genypterus_blacodes","Genypterus","Ophidiidae","Ophidiiformes","Actinopterygii",482,"bathydemersal","polar_deep","marine","pelagic","elongate",1000,200,4.2,0.13,4.6
-"Glossogobius_giuris","Glossogobius","Gobiidae","Perciformes","Actinopterygii",4833,"benthopelagic","tropical","mixed","benthic","fusiform",5,50,3.7,0.69,1.1
-"Gobionotothen_gibberifrons","Gobionotothen","Nototheniidae","Perciformes","Actinopterygii",7041,"demersal","polar_deep","marine","benthic","fusiform",429,55,3.3,0.07,9.7
-"Gymnoscopelus_braueri","Gymnoscopelus","Myctophidae","Myctophiformes","Actinopterygii",6989,"bathypelagic","polar_deep","marine","pelagic","elongate",2700,13.2,3.2,0.47,1.7
-"Gymnoscopelus_nicholsi","Gymnoscopelus","Myctophidae","Myctophiformes","Actinopterygii",6990,"bathypelagic","polar_deep","marine","pelagic","elongate",1816.67,16.1,3.4,0.21,3.7
+"Equulites elongatus","Equulites","Leiognathidae","Perciformes","Actinopterygii",4450,"demersal","tropical","marine","benthic","fusiform",100,17.3,3.12,1.02,0.77
+"Etrumeus teres","Etrumeus","Dussumieriidae","Clupeiformes","Actinopterygii",1455,"pelagic_neritic","subtropical","marine","pelagic","elongate",125,33,3.6,1.65,0.5
 "Gymnura","Gymnuridae","Myliobatiformes","Myliobatiformes","Elasmobranchii",10237,"demersal","tropical","marine","benthic","flat",72.66666667,161.4,4.5,0.36,1.5
-"Harpadon_nehereus","Harpadon","Synodontidae","Aulopiformes","Actinopterygii",260,"benthopelagic","tropical","mixed","pelagic","elongate",576.67,40,4.1,1.48,0.5
-"Helicolenus_dactylopterus","Helicolenus","Sebastidae","Scorpaeniformes","Actinopterygii",76,"bathydemersal","polar_deep","marine","benthic","fusiform",1100,50,3.5,0.05,13.1
 "Hemerocoetes","Hemerocoetes","Hemerocoetidae","Acropomatiformes","Actinopterygii",909,"demersal","temperate","marine","benthic","elongate",153.5,28,4,0.341999996,3.4342056
-"Hemigymnus_fasciatus","Hemigymnus","Labridae","Perciformes","Actinopterygii",5635,"reef_associated","tropical","marine","benthic","fusiform",25,30,3.5,0.28,2.6
-"Hippoglossus_hippoglossus","Hippoglossus","Pleuronectidae","Pleuronectiformes","Actinopterygii",1371,"demersal","temperate","marine","pelagic","fusiform",2000,470,4,0.03,17.7
-"Huso_huso","Huso","Acipenseridae","Acipenseriformes","Actinopterygii",2067,"pelagic_neritic","temperate","mixed","pelagic","elongate",180,800,4.4,0.02,25.1
-"Hydrolagus_affinis","Hydrolagus","Chimaeridae","Chimaeriformes","Holocephali",5441,"bathydemersal","polar_deep","marine","benthic","elongate",3000,130,4,0.14,4.2
-"Hyperoglyphe_antarctica","Hyperoglyphe","Centrolophidae","Perciformes","Actinopterygii",496,"benthopelagic","polar_deep","marine","pelagic","fusiform",1500,140,4,0.31,2
-"Hypomesus_pretiosus","Hypomesus","Osmeridae","Osmeriformes","Actinopterygii",255,"benthopelagic","temperate","mixed","pelagic","elongate",50,30.5,3.4,0.5,1.5
-"Hyporhamphus_dussumieri","Hyporhamphus","Hemiramphidae","Beloniformes","Actinopterygii",12895,"reef_associated","tropical","marine","pelagic","elongate",6,38,3.5,0.55,1.3
-"Hyporhamphus_ihi","Hyporhamphus","Hemiramphidae","Beloniformes","Actinopterygii",13135,"pelagic_neritic","temperate","marine","pelagic","elongate",9.67,26,3.2,0.78,1
-"Hyporhamphus_limbatus","Hyporhamphus","Hemiramphidae","Beloniformes","Actinopterygii",8313,"pelagic_neritic","tropical","mixed","benthic","elongate",9.67,35,3.1,0.71,1
-"Iluocoetes_fimbriatus","Iluocoetes","Zoarcidae","Perciformes","Actinopterygii",12894,"demersal","temperate","mixed","benthic","elongate",600,35.6,3.57,0.17,4.1
-"Isopsetta_isolepis","Isopsetta","Pleuronectidae","Pleuronectiformes","Actinopterygii",4242,"demersal","temperate","marine","benthic","short_deep",425,55,3.6,0.36,2
-"Isurus_oxyrinchus","Isurus","Lamnidae","Lamniformes","Elasmobranchii",752,"pelagic_oceanic","subtropical","marine","pelagic","fusiform",750,445,4.5,0.08,6.6
-"Johnius_belangerii","Johnius","Sciaenidae","Perciformes","Actinopterygii",5520,"demersal","tropical","mixed","benthic","fusiform",40,30,3.3,0.57,1.3
-"Katsuwonus_pelamis","Katsuwonus","Scombridae","Perciformes","Actinopterygii",107,"pelagic_oceanic","tropical","marine","pelagic","fusiform",260,110,4.4,0.49,1.3
-"Lagocepahlus_lagocephalus","Lagocephalus","Tetraodontidae","Tetraodontiformes","Actinopterygii",4292,"benthopelagic","subtropical","marine","pelagic","fusiform",476,61,3.7,0.29,2.3
-"Lamna_nasus","Lamna","Lamnidae","Lamniformes","Elasmobranchii",88,"pelagic_oceanic","polar_deep","marine","pelagic","fusiform",1360,350,4.6,0.06,8.8
-"Lampris_guttatus","Lampris","Lampridae","Lampriformes","Actinopterygii",1072,"bathypelagic","polar_deep","marine","pelagic","short_deep",500,200,4.2,0.22,2.8
-"Lates_calcarifer","Lates","Latidae","Perciformes","Actinopterygii",346,"demersal","tropical","mixed","benthic","fusiform",40,200,3.8,0.13,4.5
-"Leiognathus_dussumieri","Karalla","Leiognathidae","Perciformes","Actinopterygii",6372,"demersal","tropical","marine","benthic","short_deep",40,14,3.2,1.04,0.8
-"Leiognathus_splendens","Eubleekeria","Leiognathidae","Perciformes","Actinopterygii",4454,"demersal","tropical","marine","benthic","short_deep",100,17,2.9,1.02,0.8
-"Lepidonotothen_squamifrons","Lepidonotothen","Nototheniidae","Perciformes","Actinopterygii",7045,"benthopelagic","temperate","marine","pelagic","fusiform",900,55,3.5,0.12,5.7
-"Lepidopsetta_bilineata","Lepidopsetta","Pleuronectidae","Pleuronectiformes","Actinopterygii",24237,"demersal","temperate","marine","benthic","short_deep",575,58,3.2,0.15,4.4
-"Lepidorhombus_boscii","Lepidorhombus","Scophthalmidae","Pleuronectiformes","Actinopterygii",27,"demersal","temperate","marine","benthic","fusiform",800,40,3.7,0.27,2.7
-"Lepidorhombus_whiffiagonis","Lepidorhombus","Scophthalmidae","Pleuronectiformes","Actinopterygii",28,"bathydemersal","polar_deep","marine","benthic","fusiform",700,60,4.3,0.12,5.5
-"Lepidorhynchus_denticulatus","Lepidorhynchus","Macrouridae","Gadiformes","Actinopterygii",8483,"bathypelagic","polar_deep","marine","pelagic","elongate",1000,55,3.7,0.15,4.4
-"Leptomelanosoma_indicum","Leptomelanosoma","Polynemidae","Perciformes","Actinopterygii",4469,"demersal","tropical","mixed","benthic","elongate",100,142,3.9,0.19,3.1
-"Lethrinus_enigmaticus","Lethrinus","Lethrinidae","Perciformes","Actinopterygii",1855,"reef_associated","tropical","marine","benthic","fusiform",50,55,3.8,0.15,4.4
-"Lethrinus_mahsena","Lethrinus","Lethrinidae","Perciformes","Actinopterygii",1843,"reef_associated","tropical","marine","benthic","fusiform",100,65,3.4,0.1,6.5
-"Lethrinus_microdon","Lethrinus","Lethrinidae","Perciformes","Actinopterygii",1845,"reef_associated","tropical","marine","benthic","fusiform",80,80,3.8,0.2,3.2
-"Lethrinus_nebulosus","Lethrinus","Lethrinidae","Perciformes","Actinopterygii",1846,"reef_associated","tropical","mixed","benthic","fusiform",75,87,3.8,0.21,3.1
-"Lethrinus_olivaceus","Lethrinus","Lethrinidae","Perciformes","Actinopterygii",1864,"reef_associated","tropical","marine","pelagic","fusiform",185,100,4,0.25,2.5
-"Lethrinus_variegatus","Lethrinus","Lethrinidae","Perciformes","Actinopterygii",1850,"reef_associated","tropical","marine","benthic","fusiform",150,20,3.8,0.49,1.6
-"Lethrinus_xanthochilus","Lethrinus","Lethrinidae","Perciformes","Actinopterygii",1852,"reef_associated","tropical","marine","benthic","fusiform",150,70,3.8,0.17,3.8
-"Limanda_aspera","Limanda","Pleuronectidae","Pleuronectiformes","Actinopterygii",520,"demersal","temperate","marine","benthic","short_deep",700,49,3.5,0.12,5.7
-"Lithognathus_mormyrus","Lithognathus","Sparidae","Perciformes","Actinopterygii",706,"demersal","subtropical","mixed","benthic","fusiform",150,55,3.4,0.24,2.9
-"Liza_aurata","Chelon","Mugilidae","Mugiliformes","Actinopterygii",1735,"pelagic_neritic","temperate","marine","benthic","fusiform",20,59,2.8,0.16,4.1
-"Liza_carinata","Liza","Mugilidae","Mugiliformes","Actinopterygii",13673,"pelagic_neritic","tropical","mixed","benthic","fusiform",28,18,2.04,0.52,1.4
-"Liza_ramada","Chelon","Mugilidae","Mugiliformes","Actinopterygii",4583,"pelagic_neritic","temperate","marine","benthic","fusiform",20,70,2.3,0.25,2.7
-"Liza_saliens","Chelon","Mugilidae","Mugiliformes","Actinopterygii",1736,"demersal","subtropical","marine","benthic","fusiform",20,40,2.9,0.26,2.7
-"Lophius_budegassa","Lophius","Lophiidae","Lophiiformes","Actinopterygii",5094,"bathydemersal","polar_deep","marine","pelagic","fusiform",1013,100,4.4,0.08,7.7
-"Lophius_piscatorius","Lophius","Lophiidae","Lophiiformes","Actinopterygii",716,"bathydemersal","polar_deep","marine","pelagic","short_deep",1000,200,4.5,0.18,3.4
+"Lagocepahlus lagocephalus","Lagocephalus","Tetraodontidae","Tetraodontiformes","Actinopterygii",4292,"benthopelagic","subtropical","marine","pelagic","fusiform",476,61,3.7,0.29,2.3
+"Leiognathus dussumieri","Karalla","Leiognathidae","Perciformes","Actinopterygii",6372,"demersal","tropical","marine","benthic","short_deep",40,14,3.2,1.04,0.8
+"Leiognathus splendens","Eubleekeria","Leiognathidae","Perciformes","Actinopterygii",4454,"demersal","tropical","marine","benthic","short_deep",100,17,2.9,1.02,0.8
+"Liza aurata","Chelon","Mugilidae","Mugiliformes","Actinopterygii",1735,"pelagic_neritic","temperate","marine","benthic","fusiform",20,59,2.8,0.16,4.1
+"Liza ramada","Chelon","Mugilidae","Mugiliformes","Actinopterygii",4583,"pelagic_neritic","temperate","marine","benthic","fusiform",20,70,2.3,0.25,2.7
+"Liza saliens","Chelon","Mugilidae","Mugiliformes","Actinopterygii",1736,"demersal","subtropical","marine","benthic","fusiform",20,40,2.9,0.26,2.7
 "Lumpenus","Lumpenus","Lumpenidae","Perciformes","Actinopterygii",1457,"demersal","temperate","marine","benthic","elongate",344.333333,45.833333,3.29,0.14,5.3
-"Lutjanus_argentimaculatus","Lutjanus","Lutjanidae","Perciformes","Actinopterygii",1407,"reef_associated","subtropical","mixed","pelagic","fusiform",120,150,3.6,0.19,3.2
-"Lutjanus_bohar","Lutjanus","Lutjanidae","Perciformes","Actinopterygii",1417,"reef_associated","tropical","mixed","benthic","fusiform",180,90,4.3,0.09,7.2
-"Lutjanus_fulviflamma","Lutjanus","Lutjanidae","Perciformes","Actinopterygii",261,"reef_associated","tropical","mixed","benthic","fusiform",35,35,3.8,0.9,0.9
-"Lutjanus_gibbus","Lutjanus","Lutjanidae","Perciformes","Actinopterygii",265,"reef_associated","tropical","marine","benthic","fusiform",150,50,4.1,0.31,2.2
-"Lutjanus_johnii","Lutjanus","Lutjanidae","Perciformes","Actinopterygii",264,"reef_associated","tropical","mixed","benthic","fusiform",80,97,4.2,0.12,5.1
-"Lutjanus_kasmira","Lutjanus","Lutjanidae","Perciformes","Actinopterygii",156,"reef_associated","tropical","marine","benthic","fusiform",265,40,3.9,0.21,3.3
-"Lutjanus_lutjanus","Lutjanus","Lutjanidae","Perciformes","Actinopterygii",159,"reef_associated","tropical","marine","benthic","fusiform",96,35,4.1,0.53,1.4
-"Lutjanus_malabaricus","Lutjanus","Lutjanidae","Perciformes","Actinopterygii",162,"reef_associated","tropical","mixed","pelagic","fusiform",100,100,4.5,0.12,5.1
-"Lutjanus_vitta","Lutjanus","Lutjanidae","Perciformes","Actinopterygii",184,"reef_associated","tropical","mixed","benthic","fusiform",72,40,4,0.22,3.1
-"Macrodon_ancylodon","Macrodon","Sciaenidae","Perciformes","Actinopterygii",417,"demersal","subtropical","mixed","pelagic","fusiform",60,45,3.9,0.27,2.6
-"Macrourus_berglax","Macrourus","Macrouridae","Gadiformes","Actinopterygii",331,"benthopelagic","temperate","marine","benthic","elongate",1000,110,3.7,0.04,16.2
-"Macruronus_magellanicus","Macruronus","Merlucciidae","Gadiformes","Actinopterygii",329,"benthopelagic","subtropical","marine","pelagic","elongate",500,115,3.9,0.36,1.8
-"Macruronus_novaezelandiae","Macruronus","Merlucciidae","Gadiformes","Actinopterygii",1825,"benthopelagic","subtropical","mixed","pelagic","elongate",1000,120,4.5,0.14,4.3
-"Mallotus_villosus","Mallotus","Osmeridae","Osmeriformes","Actinopterygii",252,"pelagic_oceanic","polar_deep","mixed","pelagic","elongate",725,20,3.2,0.48,1.6
-"Mancopsetta_maculata","Mancopsetta","Achiropsettidae","Pleuronectiformes","Actinopterygii",7121,"demersal","temperate","marine","benthic","short_deep",1115,50,3.7,0.28,2.5
-"Megalapsis_cordyla","Megalaspis","Carangidae","Perciformes","Actinopterygii",384,"reef_associated","tropical","marine","pelagic","fusiform",100,80,3.9,0.71,1
-"Megalaspis_cordyla","Megalaspis","Carangidae","Perciformes","Actinopterygii",384,"reef_associated","tropical","mixed","pelagic","fusiform",100,80,3.9,0.71,1
-"Melanogrammus_aeglefinus","Melanogrammus","Gadidae","Gadiformes","Actinopterygii",1381,"demersal","temperate","marine","benthic","fusiform",450,112,4,0.18,3.6
-"Menticirrhus_americanus","Menticirrhus","Sciaenidae","Perciformes","Actinopterygii",409,"demersal","subtropical","mixed","benthic","fusiform",40,50,3.5,0.27,2.5
-"Merlangius_merlangus","Merlangius","Gadidae","Gadiformes","Actinopterygii",29,"benthopelagic","temperate","mixed","benthic","fusiform",200,91.5,4.4,0.34,2
-"Merluccius_australis","Merluccius","Merlucciidae","Gadiformes","Actinopterygii",322,"benthopelagic","subtropical","marine","pelagic","elongate",1000,155,4.5,0.32,2
-"Merluccius_gayi_gayi","Merluccius","Merlucciidae","Gadiformes","Actinopterygii",324,"bathydemersal","polar_deep","marine","pelagic","fusiform",500,87,4.32,0.25,3.67
-"Merluccius_hubbsi","Merluccius","Merlucciidae","Gadiformes","Actinopterygii",325,"benthopelagic","temperate","marine","pelagic","elongate",800,95,4.2,0.15,4.2
-"Merluccius_merluccius","Merluccius","Merlucciidae","Gadiformes","Actinopterygii",30,"demersal","temperate","marine","pelagic","elongate",1075,140,4.4,0.13,4.8
-"Merluccius_productus","Merluccius","Merlucciidae","Gadiformes","Actinopterygii",326,"pelagic_neritic","temperate","mixed","pelagic","elongate",1000,91,4.4,0.13,4.8
-"Micromesistius_australis","Micromesistius","Gadidae","Gadiformes","Actinopterygii",320,"benthopelagic","temperate","marine","benthic","elongate",900,90,3.3,0.35,1.9
-"Micromesistius_poutassou","Micromesistius","Gadidae","Gadiformes","Actinopterygii",31,"bathypelagic","temperate","marine","pelagic","elongate",3000,55.5,4.1,0.37,2
-"Micropogonias_furnieri","Micropogonias","Sciaenidae","Perciformes","Actinopterygii",7620,"demersal","subtropical","mixed","benthic","fusiform",60,60,3.1,0.5,1.4
-"Microstomus_pacificus","Microstomus","Pleuronectidae","Pleuronectiformes","Actinopterygii",4247,"demersal","temperate","marine","benthic","short_deep",1370,76,3.2,0.08,8.4
-"Monotaxis_grandoculis","Monotaxis","Lethrinidae","Perciformes","Actinopterygii",1869,"reef_associated","tropical","marine","benthic","fusiform",100,60,3.4,0.21,3.1
-"Mora_moro","Mora","Moridae","Gadiformes","Actinopterygii",1734,"bathypelagic","polar_deep","marine","benthic","fusiform",2500,80,3.8,0.13,5
-"Morone_saxatilis","Morone","Moronidae","Perciformes","Actinopterygii",353,"demersal","temperate","mixed","pelagic","fusiform",100,200,4.7,0.2,3.1
+"Megalapsis cordyla","Megalaspis","Carangidae","Perciformes","Actinopterygii",384,"reef_associated","tropical","marine","pelagic","fusiform",100,80,3.9,0.71,1
 "Mugil","Mugil","Mugilidae","Mugiliformes","Actinopterygii",3595,"demersal","tropical","marine","benthic","fusiform",51.66666667,48.51428563,2.45,0.304333335,3.022560693
-"Mugil_cephalus","Mugil","Mugilidae","Mugiliformes","Actinopterygii",785,"benthopelagic","subtropical","mixed","benthic","fusiform",120,100,2.5,0.34,2
-"Mugil_liza","Mugil","Mugilidae","Mugiliformes","Actinopterygii",1090,"demersal","subtropical","mixed","benthic","fusiform",141.67,80,2,0.24,2.7
-"Mullus_barbatus_barbatus","Mullus","Mullidae","Perciformes","Actinopterygii",790,"demersal","subtropical","marine","benthic","fusiform",328,38.2,3.3,0.74,2.35
-"Mullus_surmuletus","Mullus","Mullidae","Perciformes","Actinopterygii",1327,"demersal","subtropical","marine","benthic","fusiform",409,40,3.5,0.24,3
-"Mustelus_antarcticus","Mustelus","Triakidae","Carcharhiniformes","Elasmobranchii",5943,"demersal","temperate","marine","pelagic","elongate",350,157,4.5,0.17,3.5
-"Mustelus_lenticulatus","Mustelus","Triakidae","Carcharhiniformes","Elasmobranchii",5933,"demersal","subtropical","marine","benthic","elongate",860,125,3.5,0.11,5.3
-"Mycteroperca_acutirostris","Mycteroperca","Serranidae","Perciformes","Actinopterygii",9386,"reef_associated","subtropical","marine","pelagic","fusiform",40,80,3.4,0.14,4.5
-"Mycteroperca_rubra","Mycteroperca","Serranidae","Perciformes","Actinopterygii",1214,"demersal","subtropical","marine","pelagic","fusiform",200,144,4.1,0.11,5.6
-"Myoxocephalus_scorpius","Myoxocephalus","Cottidae","Scorpaeniformes","Actinopterygii",1329,"demersal","polar_deep","mixed","benthic","fusiform",451,60,3.9,0.68,1
-"Nemadactylus_bergi","Nemadactylus","Cheilodactylidae","Perciformes","Actinopterygii",460,"demersal","subtropical","marine","benthic","fusiform",277.5,39.5,3.2,0.18,3.9
-"Nemipterus_bipunctatus","Nemipterus","Nemipteridae","Perciformes","Actinopterygii",5851,"demersal","tropical","marine","benthic","fusiform",100,30,3.9,0.43,1.7
-"Nemipterus_japonicus","Nemipterus","Nemipteridae","Perciformes","Actinopterygii",4559,"demersal","tropical","marine","pelagic","fusiform",80,32,4.1,0.54,1.3
-"Neolissochilus_hexagonolepis","Neolissochilus","Cyprinidae","Cypriniformes","Actinopterygii",12125,"benthopelagic","tropical","freshwater","benthic","fusiform",23.7,120,3,0.21,2.9
-"Notophycis_marginata","Notophycis","Moridae","Gadiformes","Actinopterygii",2008,"benthopelagic","subtropical","marine","pelagic","elongate",1200,24,4.07,0.24,3.1
-"Notothenia_neglecta","Notothenia","Nototheniidae","Perciformes","Actinopterygii",58010,"benthopelagic","polar_deep","marine","benthic","fusiform",95,45,3.3,0.13,5.2
-"Oblada_melanura","Oblada","Sparidae","Perciformes","Actinopterygii",850,"benthopelagic","subtropical","marine","benthic","fusiform",30,36.6,3.4,0.2,3.6
-"Odax_pullus","Odax","Odacidae","Perciformes","Actinopterygii",12840,"demersal","subtropical","marine","benthic","fusiform",20,40,2.1,0.51,1.4
-"Oncorhynchus_gorbuscha","Oncorhynchus","Salmonidae","Salmoniformes","Actinopterygii",240,"demersal","subtropical","mixed","pelagic","fusiform",250,76,4.5,0.33,2
-"Oncorhynchus_kisutch","Oncorhynchus","Salmonidae","Salmoniformes","Actinopterygii",245,"pelagic","subtropical","mixed","pelagic","fusiform",250,108,4.2,0.21,3
-"Oncorhynchus_mykiss","Oncorhynchus","Salmonidae","Salmoniformes","Actinopterygii",239,"benthopelagic","subtropical","mixed","benthic","fusiform",200,122,4.1,0.69,0.9
-"Oncorhynchus_tshawytscha","Oncorhynchus","Salmonidae","Salmoniformes","Actinopterygii",244,"benthopelagic","subtropical","mixed","pelagic","fusiform",375,150,4.4,0.15,4
-"Ophiodon_elongatus","Ophiodon","Hexagrammidae","Scorpaeniformes","Actinopterygii",509,"demersal","temperate","marine","pelagic","elongate",475,152,4.5,0.27,2.3
-"Opisthonema_oglinum","Opisthonema","Clupeidae","Clupeiformes","Actinopterygii",1486,"reef_associated","tropical","marine","pelagic","fusiform",50,38,4.5,0.65,1.1
-"Osmerus_mordax","Osmerus","Osmeridae","Osmeriformes","Actinopterygii",253,"pelagic_oceanic","temperate","mixed","benthic","elongate",425,35.6,3,0.3,2.4
-"Oxycheilinus_digramma","Oxycheilinus","Labridae","Perciformes","Actinopterygii",5599,"reef_associated","tropical","mixed","benthic","fusiform",60,40,3.7,0.18,3.8
-"Pagellus_acarne","Pagellus","Sparidae","Perciformes","Actinopterygii",889,"benthopelagic","subtropical","marine","benthic","fusiform",500,36,3.8,0.21,3.4
-"Pagellus_bogaraveo","Pagellus","Sparidae","Perciformes","Actinopterygii",890,"benthopelagic","temperate","marine","benthic","fusiform",700,70,4.2,0.16,4.2
-"Pagellus_centrodontus","Pagellus","Sparidae","Perciformes","Actinopterygii",890,"benthopelagic","temperate","marine","benthic","fusiform",700,70,4.2,0.16,4.2
-"Pagellus_erythrinus","Pagellus","Sparidae","Perciformes","Actinopterygii",893,"benthopelagic","subtropical","marine","benthic","fusiform",300,60,3.5,0.24,3
-"Pagothenia_borchgrevinki","Pagothenia","Nototheniidae","Perciformes","Actinopterygii",7049,"pelagic_oceanic","polar_deep","marine","pelagic","fusiform",550,28,3.2,0.14,5.3
-"Pagrus_auriga","Pagrus","Sparidae","Perciformes","Actinopterygii",5066,"benthopelagic","subtropical","marine","benthic","short_deep",170,80,3.8,0.09,7
-"Pagrus_caeruleostictus","Pagrus","Sparidae","Perciformes","Actinopterygii",4540,"benthopelagic","subtropical","mixed","benthic","short_deep",200,90,3.7,0.21,3.2
-"Pagrus_pagrus","Pagrus","Sparidae","Perciformes","Actinopterygii",1756,"benthopelagic","subtropical","marine","benthic","fusiform",250,91,3.9,0.1,6.4
-"Pampus_argenteus","Pampus","Stromateidae","Perciformes","Actinopterygii",491,"benthopelagic","subtropical","marine","benthic","short_deep",110,60,3.3,0.54,1.3
-"Pampus_chinensis","Pampus","Stromateidae","Perciformes","Actinopterygii",8187,"benthopelagic","tropical","mixed","pelagic","short_deep",110,40,3.6,0.66,1
-"Pampus_punctatissimus","Pampus","Stromateidae","Perciformes","Actinopterygii",59625,"benthopelagic","subtropical","marine","benthic","short_deep",110,25.8,3.3,0.94,0.8
-"Paralichthys_patagonicus","Paralichthys","Paralichthyidae","Pleuronectiformes","Actinopterygii",14127,"demersal","subtropical","marine","pelagic","short_deep",200,48,3.9,0.18,3.5
-"Parastromateus_niger","Parastromateus","Carangidae","Perciformes","Actinopterygii",1947,"reef_associated","tropical","mixed","pelagic","short_deep",105,75,2.9,0.59,1.2
-"Parona_signata","Parona","Carangidae","Perciformes","Actinopterygii",386,"demersal","subtropical","marine","pelagic","fusiform",167.6,60,3.4,0.31,2.1
-"Parophrys_vetulus","Parophrys","Pleuronectidae","Pleuronectiformes","Actinopterygii",4248,"demersal","temperate","marine","benthic","short_deep",550,49,3.4,0.24,2.9
-"Parupeneus_barberinus","Parupeneus","Mullidae","Perciformes","Actinopterygii",5987,"reef_associated","tropical","marine","benthic","fusiform",100,60,3.4,0.22,3.3
-"Parupeneus_trifasciatus","Parupeneus","Mullidae","Perciformes","Actinopterygii",5988,"reef_associated","tropical","marine","benthic","fusiform",80,35,3.5,0.37,1.9
-"Patagonotothen_ramsayi","Patagonotothen","Nototheniidae","Perciformes","Actinopterygii",10308,"benthopelagic","temperate","marine","benthic","fusiform",500,44,3.5,0.25,2.8
-"Pegusa_lascaris","Pegusa","Soleidae","Pleuronectiformes","Actinopterygii",1336,"demersal","subtropical","mixed","benthic","elongate",350,40,3.3,0.47,1.6
-"Pentaprion_longimanus","Pentaprion","Gerreidae","Perciformes","Actinopterygii",4448,"demersal","tropical","mixed","benthic","fusiform",220,15,3.4,1.01,0.8
-"Photopectoralis_bindus","Photopectoralis","Leiognathidae","Perciformes","Actinopterygii",4449,"demersal","tropical","mixed","benthic","short_deep",160,11,2.9,0.95,0.8
-"Phycis_phycis","Phycis","Phycidae","Gadiformes","Actinopterygii",1747,"benthopelagic","subtropical","marine","benthic","fusiform",614,65,4.3,0.24,2.8
-"Platichthys_stellatus","Platichthys","Pleuronectidae","Pleuronectiformes","Actinopterygii",4249,"demersal","polar_deep","mixed","benthic","short_deep",375,91,3.6,0.19,3.5
-"Platycephalus_indicus","Platycephalus","Platycephalidae","Scorpaeniformes","Actinopterygii",950,"reef_associated","subtropical","mixed","pelagic","elongate",200,100,3.6,0.47,1.4
-"Pleuragramma_antarctica","Pleuragramma","Nototheniidae","Perciformes","Actinopterygii",472,"pelagic_oceanic","polar_deep","marine","pelagic","fusiform",728,25,3.2,0.14,5.2
-"Pleurogrammus_monopterygius","Pleurogrammus","Hexagrammidae","Scorpaeniformes","Actinopterygii",4037,"demersal","polar_deep","marine","benthic","fusiform",720,56.5,3.4,0.4,1.7
-"Pleuronectes_platessa","Pleuronectes","Pleuronectidae","Pleuronectiformes","Actinopterygii",1342,"demersal","temperate","mixed","benthic","short_deep",200,100,3.2,0.06,10.5
+"Neolissochilus hexagonolepis","Neolissochilus","Cyprinidae","Cypriniformes","Actinopterygii",12125,"benthopelagic","tropical","freshwater","benthic","fusiform",23.7,120,3,0.21,2.9
+"Pagellus centrodontus","Pagellus","Sparidae","Perciformes","Actinopterygii",890,"benthopelagic","temperate","marine","benthic","fusiform",700,70,4.2,0.16,4.2
+"Pentaprion longimanus","Pentaprion","Gerreidae","Perciformes","Actinopterygii",4448,"demersal","tropical","mixed","benthic","fusiform",220,15,3.4,1.01,0.8
 "Plotosus","Plotosus","Plotosidae","Siluriformes","Actinopterygii",8595,"demersal","tropical","marine","benthic","elongate",60,53.0857143,3.57,0.35,2.6
-"Pogonias_cromis","Pogonias","Sciaenidae","Perciformes","Actinopterygii",425,"demersal","subtropical","mixed","benthic","fusiform",98,170,3.4,0.2,2.9
-"Pollachius_virens","Pollachius","Gadidae","Gadiformes","Actinopterygii",1343,"demersal","temperate","marine","pelagic","fusiform",364,130,4.3,0.2,3.1
-"Polyprion_americanus","Polyprion","Polyprionidae","Perciformes","Actinopterygii",349,"demersal","polar_deep","marine","pelagic","fusiform",600,210,4.1,0.08,7.6
-"Polyprion_oxygeneios","Polyprion","Polyprionidae","Perciformes","Actinopterygii",350,"demersal","subtropical","marine","pelagic","fusiform",854,160,4.5,0.23,2.7
-"Pomatomus_saltatrix","Pomatomus","Pomatomidae","Perciformes","Actinopterygii",364,"pelagic_oceanic","subtropical","mixed","pelagic","fusiform",200,130,4.5,0.19,3.3
-"Ponticola_ratan","Ponticola","Gobiidae","Perciformes","Actinopterygii",25980,"demersal","temperate","brackish","benthic","elongate",198,20,4,0.4,1.9
-"Prionace_glauca","Prionace","Carcharhinidae","Carcharhiniformes","Elasmobranchii",898,"pelagic_oceanic","subtropical","mixed","pelagic","fusiform",1000,400,4.4,0.1,5.2
-"Prionotus_nudigula","Prionotus","Triglidae","Scorpaeniformes","Actinopterygii",14029,"demersal","subtropical","marine","pelagic","fusiform",200,38.1,4.2,0.13,5.3
-"Protonibea_diacanthus","Protonibea","Sciaenidae","Perciformes","Actinopterygii",4571,"demersal","tropical","mixed","benthic","fusiform",100,150,3.5,0.39,1.6
-"Psammobatis_normani","Psammobatis","Arhynchobatidae","Rajiformes","Elasmobranchii",54438,"demersal","subtropical","marine","pelagic","flat",121,1,4.05,0.23,5.6
-"Psammobatis_scobina","Psammobatis","Arhynchobatidae","Rajiformes","Elasmobranchii",54085,"demersal","subtropical","marine","pelagic","flat",450,1,4.05,0.23,5.6
-"Pseudopercis_semifasciata","Pseudopercis","Pinguipedidae","Perciformes","Actinopterygii",50136,"demersal","subtropical","marine","benthic","fusiform",100,100,3.9,0.13,4.7
-"Pseudophycis_bachus","Pseudophycis","Moridae","Gadiformes","Actinopterygii",2020,"demersal","subtropical","mixed","pelagic","fusiform",700,90,3.9,0.47,1.4
-"Raja_clavata","Raja","Rajidae","Rajiformes","Elasmobranchii",2059,"demersal","subtropical","marine","benthic","flat",1020,105,3.8,0.09,6.5
-"Raja_rhina","Beringraja","Rajidae","Rajiformes","Elasmobranchii",2566,"demersal","polar_deep","marine","benthic","flat",1069,180,4.38,0.07,8.5
-"Rastrelliger_brachysoma","Rastrelliger","Scombridae","Perciformes","Actinopterygii",109,"pelagic_neritic","tropical","mixed","benthic","fusiform",200,34.5,2.7,1.45,0.5
-"Rastrelliger_kanagurta","Rastrelliger","Scombridae","Perciformes","Actinopterygii",111,"pelagic_neritic","tropical","marine","pelagic","fusiform",90,42.1,3.2,0.98,0.7
-"Reinhardtius_hippoglossoides","Reinhardtius","Pleuronectidae","Pleuronectiformes","Actinopterygii",516,"benthopelagic","polar_deep","marine","pelagic","fusiform",2200,110,4.4,0.09,6.7
-"Rexea_solandri","Rexea","Gempylidae","Perciformes","Actinopterygii",8490,"benthopelagic","polar_deep","marine","pelagic","elongate",800,110,4.3,0.17,3.6
-"Rhizoprionodon_terraenovae","Rhizoprionodon","Carcharhinidae","Carcharhiniformes","Elasmobranchii",905,"demersal","subtropical","mixed","pelagic","fusiform",280,110,4.4,0.5,1.3
-"Salilota_australis","Salilota","Moridae","Gadiformes","Actinopterygii",306,"demersal","subtropical","marine","pelagic","elongate",1000,50,4.4,0.12,5.6
-"Salmo_salar","Salmo","Salmonidae","Salmoniformes","Actinopterygii",236,"benthopelagic","temperate","mixed","pelagic","fusiform",210,150,4.5,0.44,1.4
-"Salvelinus_alpinus_alpinus","Salvelinus","Salmonidae","Salmoniformes","Actinopterygii",247,"benthopelagic","temperate","marine","benthic","fusiform",70,107,4.4,0.06,10.8
-"Salvelinus_fontinalis","Salvelinus","Salmonidae","Salmoniformes","Actinopterygii",246,"benthopelagic","temperate","mixed","benthic","fusiform",27,86,3.3,0.28,2.3
-"Sarda_orientalis","Sarda","Scombridae","Perciformes","Actinopterygii",114,"pelagic_neritic","subtropical","marine","pelagic","fusiform",167,102,4.2,0.27,2.3
-"Sarda_sarda","Sarda","Scombridae","Perciformes","Actinopterygii",115,"pelagic_neritic","subtropical","mixed","pelagic","fusiform",200,91.4,4.5,0.72,0.9
-"Sardina_pilchardus","Sardina","Clupeidae","Clupeiformes","Actinopterygii",1350,"pelagic_neritic","subtropical","mixed","pelagic","fusiform",100,27.5,3.1,0.48,1.7
+"Raja rhina","Beringraja","Rajidae","Rajiformes","Elasmobranchii",2566,"demersal","polar_deep","marine","benthic","flat",1069,180,4.38,0.07,8.5
+"Salvelinus alpinus alpinus","Salvelinus","Salmonidae","Salmoniformes","Actinopterygii",247,"benthopelagic","temperate","marine","benthic","fusiform",70,107,4.4,0.06,10.8
 "Sardinella","Sardinella","Clupeidae","Clupeiformes","Actinopterygii",3475,"pelagic_neritic","tropical","marine","pelagic","fusiform",81.11111111,17.03809525,2.877777778,0.854523815,1.087036129
-"Sardinella_aurita","Sardinella","Clupeidae","Clupeiformes","Actinopterygii",1043,"pelagic_neritic","subtropical","mixed","benthic","fusiform",350,41,3.4,0.52,1.4
-"Sardinella_brasiliensis","Sardinella","Clupeidae","Clupeiformes","Actinopterygii",1505,"pelagic_neritic","subtropical","mixed","pelagic","fusiform",60,27,3.1,0.71,1.1
-"Sardinella_fimbriata","Sardinella","Clupeidae","Clupeiformes","Actinopterygii",1507,"pelagic_neritic","tropical","mixed","benthic","fusiform",50,13,2.7,1.61,0.5
-"Sardinella_longiceps","Sardinella","Clupeidae","Clupeiformes","Actinopterygii",1511,"pelagic_neritic","tropical","marine","benthic","fusiform",200,23,2.4,0.79,1
-"Sardinella_maderensis","Sardinella","Clupeidae","Clupeiformes","Actinopterygii",1047,"pelagic","subtropical","mixed","pelagic","fusiform",80,30,3.2,0.33,2.1
-"Sardinops_sagax","Sardinops","Clupeidae","Clupeiformes","Actinopterygii",1477,"pelagic_neritic","subtropical","marine","benthic","fusiform",200,39.5,2.8,0.33,2.2
-"Sargocentron_spiniferum","Sargocentron","Holocentridae","Beryciformes","Actinopterygii",6507,"reef_associated","tropical","marine","pelagic","fusiform",122,51,3.6,0.35,1.9
-"Sarpa_salpa","Sarpa","Sparidae","Perciformes","Actinopterygii",204,"benthopelagic","subtropical","mixed","benthic","fusiform",70,51,2,0.23,3
-"Saurida_undosquamis","Saurida","Synodontidae","Aulopiformes","Actinopterygii",1055,"reef_associated","subtropical","marine","pelagic","elongate",350,50,4.5,0.23,2.9
-"Scarus_falcipinnis","Scarus","Scaridae","Perciformes","Actinopterygii",7911,"reef_associated","tropical","marine","benthic","fusiform",20,60,2,0.34,1.9
-"Scarus_ghobban","Scarus","Scaridae","Perciformes","Actinopterygii",5548,"reef_associated","tropical","mixed","benthic","fusiform",90,75,2,0.33,2
-"Scarus_niger","Scarus","Scaridae","Perciformes","Actinopterygii",5550,"reef_associated","tropical","marine","benthic","fusiform",20,40,2,0.72,1
-"Scarus_psittacus","Scarus","Scaridae","Perciformes","Actinopterygii",5553,"reef_associated","tropical","marine","benthic","fusiform",25,34,2,1.49,0.5
-"Scarus_rubroviolaceus","Scarus","Scaridae","Perciformes","Actinopterygii",5555,"reef_associated","tropical","marine","benthic","fusiform",36,70,2,0.58,1.2
-"Scarus_tricolor","Scarus","Scaridae","Perciformes","Actinopterygii",6438,"reef_associated","tropical","marine","benthic","fusiform",25,26.6,2,0.6,1.2
-"Schizothorax_richardsonii","Schizothorax","Cyprinidae","Cypriniformes","Actinopterygii",8705,"demersal","tropical","freshwater","benthic","fusiform",23.7,60,2,0.34,2
-"Schroederichthys_bivius","Schroederichthys","Scyliorhinidae","Carcharhiniformes","Elasmobranchii",838,"demersal","subtropical","marine","benthic","elongate",78,70,3.8,0.17,3.8
-"Sciades_herzbergii","Sciades","Ariidae","Siluriformes","Actinopterygii",951,"demersal","tropical","mixed","benthic","elongate",56.5,94.2,3.3,0.25,2.6
-"Sciaena_umbra","Sciaena","Sciaenidae","Perciformes","Actinopterygii",1707,"demersal","subtropical","mixed","benthic","fusiform",200,70,3.8,0.11,5.9
-"Sciaenops_ocellatus","Sciaenops","Sciaenidae","Perciformes","Actinopterygii",1191,"demersal","subtropical","mixed","benthic","fusiform",98,155,3.7,0.46,1.4
-"Scomber_colias","Scomber","Scombridae","Perciformes","Actinopterygii",54736,"pelagic_neritic","temperate","mixed","pelagic","fusiform",500,55,3.9,0.23,2.9
-"Scomber_japonicus","Scomber","Scombridae","Perciformes","Actinopterygii",117,"pelagic_neritic","subtropical","marine","pelagic","fusiform",300,64,3.4,0.36,2
-"Scomber_scombrus","Scomber","Scombridae","Perciformes","Actinopterygii",118,"pelagic_neritic","temperate","mixed","pelagic","fusiform",1000,60,3.6,0.26,2.6
-"Scomberomorus_commerson","Scomberomorus","Scombridae","Perciformes","Actinopterygii",121,"pelagic_neritic","tropical","marine","pelagic","fusiform",70,240,4.5,0.28,2.1
-"Scomberomorus_guttatus","Scomberomorus","Scombridae","Perciformes","Actinopterygii",123,"pelagic_neritic","tropical","mixed","pelagic","fusiform",200,76,4.3,0.75,0.9
-"Scophthalmus_maximus","Scophthalmus","Scophthalmidae","Pleuronectiformes","Actinopterygii",1348,"demersal","temperate","mixed","pelagic","short_deep",70,100,4.4,0.31,2.2
-"Scopthalmus_maeoticus","Scophthalmus","Scophthalmidae","Pleuronectiformes","Actinopterygii",57861,"demersal","temperate","marine","pelagic","short_deep",150,45,4.17,0.22,3.1
-"Scorpaena_porcus","Scorpaena","Scorpaenidae","Scorpaeniformes","Actinopterygii",1758,"demersal","temperate","marine","benthic","fusiform",800,40.5,3.9,0.16,4.5
-"Scorpaena_scrofa","Scorpaena","Scorpaenidae","Scorpaeniformes","Actinopterygii",1759,"demersal","subtropical","mixed","benthic","fusiform",500,50,4.3,0.08,8.2
-"Sebastes_flavidus","Sebastes","Sebastidae","Scorpaeniformes","Actinopterygii",503,"reef_associated","temperate","marine","pelagic","fusiform",549,66,4.2,0.16,4.2
-"Sebastes_melanops","Sebastes","Sebastidae","Scorpaeniformes","Actinopterygii",3979,"reef_associated","temperate","marine","pelagic","fusiform",366,63,4.4,0.09,7.5
-"Sebastes_mentella","Sebastes","Sebastidae","Scorpaeniformes","Actinopterygii",505,"bathypelagic","polar_deep","marine","pelagic","fusiform",1441,77.5,4.1,0.09,7.5
-"Sebastes_norvegicus","Sebastes","Sebastidae","Scorpaeniformes","Actinopterygii",501,"pelagic_oceanic","temperate","marine","pelagic","fusiform",1000,100,4,0.06,10.5
-"Sebastes_oculatus","Sebastes","Sebastidae","Scorpaeniformes","Actinopterygii",12084,"demersal","subtropical","marine","benthic","fusiform",406.78,40.8,3.76,0.13,5.3
-"Sebastes_pinniger","Sebastes","Sebastidae","Scorpaeniformes","Actinopterygii",3989,"demersal","subtropical","marine","pelagic","fusiform",838,76,3.8,0.14,4.7
-"Selar_crumenophthalmus","Selar","Carangidae","Perciformes","Actinopterygii",387,"reef_associated","subtropical","marine","benthic","fusiform",170,70,3.8,0.54,1.3
-"Selaroides_leptolepis","Selaroides","Carangidae","Perciformes","Actinopterygii",388,"reef_associated","tropical","mixed","pelagic","fusiform",50,22,3.8,1.12,0.7
-"Selene_vomer","Selene","Carangidae","Perciformes","Actinopterygii",1004,"demersal","subtropical","mixed","benthic","fusiform",53,48.3,4.3,0.38,1.8
-"Seriola_lalandi","Seriola","Carangidae","Perciformes","Actinopterygii",382,"benthopelagic","subtropical","mixed","pelagic","fusiform",825,250,4.2,0.13,4.5
-"Seriolella_punctata","Seriolella","Centrolophidae","Perciformes","Actinopterygii",12922,"benthopelagic","temperate","mixed","pelagic","fusiform",650,66,3.5,0.41,1.6
-"Seriolina_nigrofasciata","Seriolina","Carangidae","Perciformes","Actinopterygii",1962,"reef_associated","tropical","mixed","benthic","short_deep",150,70,4.2,0.27,2.4
-"Serranus_scriba","Serranus","Serranidae","Perciformes","Actinopterygii",1761,"demersal","subtropical","marine","benthic","fusiform",150,36,3.8,0.19,3.8
-"Setipinna_taty","Setipinna","Engraulidae","Clupeiformes","Actinopterygii",611,"pelagic_neritic","tropical","mixed","benthic","fusiform",50,15.3,3.6,0.33,2.3
-"Siganus_argenteus","Siganus","Siganidae","Perciformes","Actinopterygii",4614,"reef_associated","tropical","marine","benthic","fusiform",40,40,2,0.75,0.9
-"Siganus_rivulatus","Siganus","Siganidae","Perciformes","Actinopterygii",4545,"reef_associated","subtropical","mixed","benthic","fusiform",30,27,2,0.23,3.1
-"Siganus_sutor","Siganus","Siganidae","Perciformes","Actinopterygii",4615,"reef_associated","tropical","mixed","benthic","fusiform",50,45,2.3,0.65,1.1
-"Sillaginodes_punctatus","Sillaginodes","Sillaginidae","Perciformes","Actinopterygii",8489,"demersal","temperate","mixed","benthic","elongate",200,72,3.3,0.47,1.4
-"Sillaginopsis_panijus","Sillaginopsis","Sillaginidae","Perciformes","Actinopterygii",402,"demersal","tropical","mixed","benthic","elongate",47.38,44,3.3,0.4,1.7
-"Sillago_ingenuua","Sillago","Sillaginidae","Perciformes","Actinopterygii",8518,"demersal","tropical","marine","benthic","elongate",50,41.3,3.23,0.53,1.43
-"Sillago_sihama","Sillago","Sillaginidae","Perciformes","Actinopterygii",4544,"reef_associated","tropical","mixed","benthic","elongate",60,31,3.3,0.66,1.1
-"Solea_solea","Solea","Soleidae","Pleuronectiformes","Actinopterygii",525,"demersal","subtropical","mixed","benthic","short_deep",150,70,3.2,0.36,2
-"Sparisoma_cretense","Sparisoma","Scaridae","Perciformes","Actinopterygii",13025,"reef_associated","subtropical","marine","benthic","fusiform",50,50,2.9,0.29,2.5
-"Sparus_aurata","Sparus","Sparidae","Perciformes","Actinopterygii",1164,"demersal","subtropical","mixed","benthic","fusiform",150,70,3.7,0.26,2.6
-"Sphyraena_chrysotaenia","Sphyraena","Sphyraenidae","Perciformes","Actinopterygii",16905,"pelagic_neritic","subtropical","marine","pelagic","elongate",50,32.2,4.39,0.58,1.3
-"Sphyraena_guachancho","Sphyraena","Sphyraenidae","Perciformes","Actinopterygii",1236,"pelagic_neritic","subtropical","mixed","pelagic","elongate",100,200,4.4,0.09,6.2
-"Sphyraena_jello","Sphyraena","Sphyraenidae","Perciformes","Actinopterygii",4827,"reef_associated","tropical","mixed","pelagic","elongate",200,150,4.5,0.1,5.8
-"Sphyraena_sphyraena","Sphyraena","Sphyraenidae","Perciformes","Actinopterygii",1765,"pelagic_neritic","subtropical","marine","pelagic","elongate",100,165,4,0.36,1.6
-"Spicara_maena","Spicara","Sparidae","Perciformes","Actinopterygii",4887,"pelagic_neritic","subtropical","marine","pelagic","fusiform",130,25,4.2,0.17,4.3
-"Spicara_smaris","Spicara","Sparidae","Perciformes","Actinopterygii",1766,"pelagic_neritic","subtropical","marine","pelagic","fusiform",328,20,3,0.19,3.8
-"Spondyliosoma_cantharus","Spondyliosoma","Sparidae","Perciformes","Actinopterygii",1356,"benthopelagic","subtropical","marine","benthic","fusiform",300,60,3.3,0.3,2.4
-"Spratelloides_robustus","Spratelloides","Clupeidae","Clupeiformes","Actinopterygii",1460,"pelagic_neritic","subtropical","mixed","pelagic","elongate",50,12,3.4,1.02,0.8
-"Sprattus_sprattus","Sprattus","Clupeidae","Clupeiformes","Actinopterygii",1357,"pelagic_neritic","temperate","mixed","pelagic","fusiform",150,16,3,0.3,2.6
-"Squalus_acanthias","Squalus","Squalidae","Squaliformes","Elasmobranchii",139,"benthopelagic","temperate","mixed","pelagic","elongate",1460,95,4.4,0.14,4.5
-"Stenodus_leucichthys","Stenodus","Salmonidae","Salmoniformes","Actinopterygii",2692,"demersal","polar_deep","mixed","pelagic","fusiform",124.73,150,4.2,0.1,5.9
-"Stolephorus_commersonii","Stolephorus","Engraulidae","Clupeiformes","Actinopterygii",566,"pelagic_neritic","tropical","marine","pelagic","fusiform",50,10,3.1,0.96,0.9
-"Stolephorus_commersonnii","Stolephorus","Engraulidae","Clupeiformes","Actinopterygii",566,"pelagic_neritic","tropical","mixed","pelagic","fusiform",50,10,3.1,0.96,0.9
-"Stolephorus_indicus","Stolephorus","Engraulidae","Clupeiformes","Actinopterygii",569,"pelagic_neritic","tropical","mixed","pelagic","elongate",50,15.5,3.6,1.05,0.8
-"Stolephorus_tri","Stolephorus","Engraulidae","Clupeiformes","Actinopterygii",577,"pelagic_neritic","tropical","mixed","pelagic","fusiform",50,9.5,3.59,1.03,0.8
-"Stolephorus_waitei","Stolephorus","Engraulidae","Clupeiformes","Actinopterygii",578,"pelagic_neritic","tropical","mixed","pelagic","elongate",50,9.4,3.59,1.51,0.6
-"Stromateus_brasiliensis","Stromateus","Stromateidae","Perciformes","Actinopterygii",12930,"benthopelagic","subtropical","marine","pelagic","fusiform",133,38,3.4,0.66,1.1
-"Syacium_gunteri","Syacium","Paralichthyidae","Pleuronectiformes","Actinopterygii",4231,"reef_associated","tropical","mixed","benthic","short_deep",95,20,3.3,0.7,1.1
-"Synodus_foetens","Synodus","Synodontidae","Aulopiformes","Actinopterygii",2719,"reef_associated","tropical","mixed","pelagic","elongate",200,48.3,4.5,0.34,2
-"Tenualosa_ilisha","Tenualosa","Clupeidae","Clupeiformes","Actinopterygii",1596,"pelagic_neritic","tropical","mixed","benthic","fusiform",200,60,2.9,0.64,1.1
-"Tenualosa_macroura","Tenualosa","Clupeidae","Clupeiformes","Actinopterygii",1597,"pelagic_neritic","tropical","marine","benthic","fusiform",50,52,3.35,1.07,0.6
-"Thaleichthys_pacificus","Thaleichthys","Osmeridae","Osmeriformes","Actinopterygii",256,"pelagic_neritic","temperate","mixed","benthic","elongate",300,34,3.3,0.34,2.3
-"Theragra_chalcogramma","Gadus","Gadidae","Gadiformes","Actinopterygii",318,"benthopelagic","polar_deep","marine","pelagic","fusiform",1280,91,3.6,0.28,2.4
-"Thunnus_alalunga","Thunnus","Scombridae","Perciformes","Actinopterygii",142,"pelagic_oceanic","subtropical","marine","pelagic","fusiform",600,140,4.3,0.23,2.7
-"Thunnus_albacares","Thunnus","Scombridae","Perciformes","Actinopterygii",143,"pelagic_oceanic","tropical","mixed","pelagic","fusiform",250,239,4.4,0.31,1.8
-"Thunnus_orientalis","Thunnus","Scombridae","Perciformes","Actinopterygii",14290,"pelagic_oceanic","subtropical","mixed","pelagic","fusiform",550,300,4.42,0.1,5.3
-"Thunnus_thynnus","Thunnus","Scombridae","Perciformes","Actinopterygii",147,"pelagic_oceanic","subtropical","mixed","pelagic","fusiform",985,458,4.5,0.07,7.4
-"Tor_putitora","Tor","Cyprinidae","Cypriniformes","Actinopterygii",9194,"benthopelagic","subtropical","freshwater","benthic","fusiform",23.7,275,2.9,0.07,8.3
-"Trachinotus_blochii","Trachinotus","Carangidae","Perciformes","Actinopterygii",1963,"reef_associated","tropical","mixed","benthic","short_deep",7,110,3.7,0.16,3.8
-"Trachinotus_ovatus","Trachinotus","Carangidae","Perciformes","Actinopterygii",1773,"pelagic_neritic","subtropical","mixed","pelagic","fusiform",200,70,3.7,0.27,2.4
-"Trachinus_draco","Trachinus","Trachinidae","Perciformes","Actinopterygii",1363,"demersal","temperate","marine","pelagic","fusiform",150,53,4.2,0.18,4
-"Trachurus_lathami","Trachurus","Carangidae","Perciformes","Actinopterygii",369,"reef_associated","subtropical","marine","pelagic","fusiform",200,40,4,0.25,2.9
-"Trachurus_mediterraneus","Trachurus","Carangidae","Perciformes","Actinopterygii",1278,"pelagic_oceanic","subtropical","mixed","pelagic","fusiform",500,60,3.8,0.21,3.3
-"Trachurus_trachurus","Trachurus","Carangidae","Perciformes","Actinopterygii",1365,"pelagic_neritic","subtropical","marine","pelagic","fusiform",1050,70,3.7,0.14,4.8
-"Trachurus_trecae","Trachurus","Carangidae","Perciformes","Actinopterygii",371,"benthopelagic","tropical","mixed","pelagic","fusiform",100,35,3.5,0.26,2.6
-"Trematomus_bernacchii","Trematomus","Nototheniidae","Perciformes","Actinopterygii",7053,"demersal","polar_deep","marine","benthic","fusiform",700,28,3.4,0.18,4
-"Trematomus_eulepidotus","Trematomus","Nototheniidae","Perciformes","Actinopterygii",7054,"demersal","polar_deep","marine","pelagic","fusiform",650,34.5,3.4,0.15,5
-"Trematomus_hansoni","Trematomus","Nototheniidae","Perciformes","Actinopterygii",7055,"demersal","polar_deep","marine","pelagic","fusiform",549,41,3.4,0.08,8.7
-"Trematomus_lepidorhinus","Trematomus","Nototheniidae","Perciformes","Actinopterygii",7056,"bathydemersal","polar_deep","marine","pelagic","fusiform",800,31,3.8,0.09,7.9
-"Trematomus_pennellii","Trematomus","Nototheniidae","Perciformes","Actinopterygii",7060,"demersal","polar_deep","marine","benthic","fusiform",732,24,3.3,0.06,11.7
-"Trematomus_scotti","Trematomus","Nototheniidae","Perciformes","Actinopterygii",7061,"demersal","polar_deep","marine","benthic","fusiform",793,16,3.2,0.16,5.1
-"Trichiurus_lepturus","Trichiurus","Trichiuridae","Perciformes","Actinopterygii",1288,"benthopelagic","subtropical","mixed","pelagic","elongate",589,234,4.4,0.25,2.3
-"Trichodon_trichodon","Trichodon","Trichodontidae","Perciformes","Actinopterygii",3682,"demersal","polar_deep","marine","pelagic","elongate",375,30.5,4,0.3,2.5
-"Trigla_lyra","Trigla","Triglidae","Scorpaeniformes","Actinopterygii",5038,"bathydemersal","polar_deep","marine","benthic","fusiform",700,60,3.7,0.11,5.8
-"Trisopterus_minutus","Trisopterus","Gadidae","Gadiformes","Actinopterygii",481,"benthopelagic","temperate","marine","benthic","fusiform",440,40,3.7,0.51,1.5
-"Tylosurus_crocodilus","Tylosurus","Belonidae","Beloniformes","Actinopterygii",977,"reef_associated","tropical","marine","pelagic","elongate",13,150,4.4,0.3,2
-"Umbrina_cirrosa","Umbrina","Sciaenidae","Perciformes","Actinopterygii",1306,"demersal","subtropical","marine","benthic","fusiform",100,73,3.4,0.28,2.3
-"Upeneus_moluccensis","Upeneus","Mullidae","Perciformes","Actinopterygii",4444,"reef_associated","subtropical","mixed","benthic","fusiform",120,22.5,3.6,0.65,1.1
-"Upeneus_parvus","Upeneus","Mullidae","Perciformes","Actinopterygii",1095,"demersal","tropical","marine","benthic","fusiform",100,30,3.9,0.43,1.7
-"Xenentodon_cancila","Xenentodon","Belonidae","Beloniformes","Actinopterygii",10124,"pelagic_neritic","tropical","mixed","benthic","elongate",2,40,3.9,0.43,1.6
-"Xiphias_gladius","Xiphias","Xiphiidae","Perciformes","Actinopterygii",226,"pelagic_oceanic","temperate","marine","pelagic","elongate",2878,455,4.5,0.12,4.5
-"Zaprora_silenus","Zaprora","Zaproridae","Perciformes","Actinopterygii",3819,"demersal","polar_deep","marine","benthic","short_deep",675,88,3.7,0.18,3.5
-"Zearaja_chilensis","Zearaja","Rajidae","Rajiformes","Elasmobranchii",51636,"demersal","temperate","marine","benthic","flat",500,210,4.5,0.08,7.3
-"Zebrasoma_desjardinii","Zebrasoma","Acanthuridae","Perciformes","Actinopterygii",58791,"reef_associated","tropical","marine","benthic","short_deep",30,40,2.02,0.35,2
-"Zeus_faber","Zeus","Zeidae","Zeiformes","Actinopterygii",1370,"benthopelagic","temperate","mixed","pelagic","short_deep",400,90,4.5,0.15,4.3
+"Schizothorax richardsonii","Schizothorax","Cyprinidae","Cypriniformes","Actinopterygii",8705,"demersal","tropical","freshwater","benthic","fusiform",23.7,60,2,0.34,2
+"Sciades herzbergii","Sciades","Ariidae","Siluriformes","Actinopterygii",951,"demersal","tropical","mixed","benthic","elongate",56.5,94.2,3.3,0.25,2.6
+"Scopthalmus maeoticus","Scophthalmus","Scophthalmidae","Pleuronectiformes","Actinopterygii",57861,"demersal","temperate","marine","pelagic","short_deep",150,45,4.17,0.22,3.1
+"Sillago ingenuua","Sillago","Sillaginidae","Perciformes","Actinopterygii",8518,"demersal","tropical","marine","benthic","elongate",50,41.3,3.23,0.53,1.43
+"Stolephorus commersonii","Stolephorus","Engraulidae","Clupeiformes","Actinopterygii",566,"pelagic_neritic","tropical","marine","pelagic","fusiform",50,10,3.1,0.96,0.9
+"Tenualosa macroura","Tenualosa","Clupeidae","Clupeiformes","Actinopterygii",1597,"pelagic_neritic","tropical","marine","benthic","fusiform",50,52,3.35,1.07,0.6
+"Theragra chalcogramma","Gadus","Gadidae","Gadiformes","Actinopterygii",318,"benthopelagic","polar_deep","marine","pelagic","fusiform",1280,91,3.6,0.28,2.4
+"Tor putitora","Tor","Cyprinidae","Cypriniformes","Actinopterygii",9194,"benthopelagic","subtropical","freshwater","benthic","fusiform",23.7,275,2.9,0.07,8.3
+"Trichodon trichodon","Trichodon","Trichodontidae","Perciformes","Actinopterygii",3682,"demersal","polar_deep","marine","pelagic","elongate",375,30.5,4,0.3,2.5
+"Zaprora silenus","Zaprora","Zaproridae","Perciformes","Actinopterygii",3819,"demersal","polar_deep","marine","benthic","short_deep",675,88,3.7,0.18,3.5
 "Abalistes stellaris","Abalistes","Balistidae","Tetraodontiformes","Actinopterygii",9,"demersal","tropical","marine","benthic","short_deep",100,60,3.6,0.21,3.1
 "Abalistes stellatus","Abalistes","Balistidae","Tetraodontiformes","Actinopterygii",58334,"reef_associated","tropical","marine","benthic","short_deep",350,60,3.64,0.21,3.1
 "Ablabys taenianotus","Ablabys","Tetrarogidae","Scorpaeniformes","Actinopterygii",10232,"benthopelagic","tropical","marine","benthic","short_deep",78,15,3.28,0.23,3.4
