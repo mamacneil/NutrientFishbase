@@ -67,5 +67,5 @@ Lastly, samples of fish tissue in our nutrients database included nuisance param
 
 ## Model structure
 
-Due to difficulty representing equations on GitHub, the model structure can be found [here]().
+Due to difficulty representing equations on GitHub, the model structure can be found [here](https://github.com/mamacneil/NutrientFishbase/raw/master/model/model.pdf).
 
