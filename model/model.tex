@@ -1,0 +1,77 @@
+% !TEX TS-program = xelatex
+%
+% Created by AARON MACNEIL on 2021-06-15.
+% Copyright (c) 2021 .
+\documentclass{article}
+
+\usepackage{polyglossia}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+\hypersetup
+{
+  pdftitle   = {FishBase Nutrient Model Structure},
+  pdfsubject = {Subject},
+  pdfauthor  = {AARON MACNEIL}
+}
+
+\title{FishBase Nutrient Model Structure}
+\author{AARON MACNEIL}
+
+\begin{document}
+
+\maketitle
+
+The model that underlies our nutrient predictions is a modification of that presented in \href{https://www.nature.com/articles/s41586-019-1592-6}{Hicks et al. 2019}, where we removed a couple of covariates, depth and K (growth rate), that had the potential to induce spurious correlation in our posterior effect sizes, given their potential for collider bias in our asserted \href{https://github.com/mamacneil/NutrientFishbase/blob/master/model/nutrients_DAG.jpg}{directed acyclic graph}.
+
+As an alternative to the GP phylogenetic covariance model (used in \href{https://www.nature.com/articles/s41467-018-06199-w}{Vaitla et al. 2018} for example) we capitalized on the hierarchical nesting of phylogeny (sensu \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12427}{Thorson 2020}), whereby species belong to a given genus, genera to specific families, and families to specific orders. This implies that species-level intercepts in the observed data come from a population related by genus group membership, genera represent samples from families, and families are samples from their parent orders, which can be represented in a hierarchical phylogenetic model that includes a global (overall) mean (γ0) at the top of a series of a non-centred, hierarchical relationships:
+
+\begin{align*}
+\gamma_0 &\sim N(0,1)\\
+\sigma_{ord} &\sim Exp(1)\\
+\beta_{oz} &\sim N(0,1)\\
+\beta_{ord} = &\gamma_0+\sigma_{ord} \beta_{oz}\\
+\sigma_{fam} &\sim Exp(1)\\
+\beta_{fz} &\sim N(0,1)\\
+\beta_{fam} &= \beta_{ord}+\sigma_{fam} \beta_{fz}\\
+\sigma_{gen} &\sim Exp(1)\\
+\beta_{0,gz} &\sim N(0,1)\\
+\beta_{0,gen} &= \beta_{0,fam}+\sigma_{gen} \beta_{0,gz}\\
+\mu_i &= \beta_{0,gen}+\beta_x X\\
+\beta_i &\sim N(\mu_i,\sigma)
+\end{align*}
+
+In both phylogenetic models the set of species level trait covariates was the same
+\[
+\beta_x X = \beta_1 GZ+\beta_2 TL+\beta_4 FP+\beta_5 L_max+\beta_6 BS+\beta_8 A_mat+\beta_9 WC
+\]
+
+Leading to an observation-scale model
+
+\[
+\mu_{obs} = \mu_i+\gamma_1 FO+\gamma_2 PR
+\]
+
+While Hicks et al. 2019 used a mix of Normal, Gamma, and Noncentral-t distributions for the data likelihood, we chose to model nutrients (except protein) on the log scale, and used either a Normal (selenium, omega-3) 
+
+\[
+\gamma_{obs} \sim N(\mu_{obs},\sigma_{obs})
+\]
+
+or Noncentral-t distribution (protein, zinc, calcium, iron, vitamin A)
+
+\[
+\gamma_{obs}~Nt(\mu_{obs},\sigma_{obs,\tau})
+\]
+
+Given regularizing priors
+
+\begin{align*}
+\beta_x, \gamma_x &\sim N(0,1) \\
+\sigma_{obs} &\sim Exp(1)\\ 
+\tau &\sim U(0,20)
+\end{align*}
+
+We ran the three models on each of the seven nutrients, using the Python package \href{https://docs.pymc.io/}{PyMC3}. Models were run with four separately-initiated chains for 5,000 iterations using a No-U-Turn sampler (NUTS). 
+
+\end{document}
