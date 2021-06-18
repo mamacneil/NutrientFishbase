@@ -53,7 +53,7 @@ which will grab the ``X_results.csv`` files and will use covariates to generate 
 Fish consume nutrients in relation to key aspects of their diet, energetic demand, and thermal regime, in ways that are reflected by their individual species traits. Recognizing this, our statistical models represent these dimensions using traits sourced directly from FishBase. Specifically these include:
 
 1. *Feeding pathway (FP)*: indicates whether nutrients are sourced through a pelagic or benthic food web.
-2. *Trophic level (TL*): represents the number of feeding linkages between primary producers and a given species.
+2. *Trophic level (TL)*: represents the number of feeding linkages between primary producers and a given species.
 3. *Environment (EN)*: refers to the aquatic regime; one of marine, freshwater, brackish, or mixed (more than one environment).
 4. *Water column (WC)*: refers to typical position in the water column; one of pelagic, demersal, reef-associated, bathypelagic, or benthopelagic, each of which has distinct pathways for nutrient input and cycling.
 5. *Maximum length (Lmax)*: refers to how long a species is expected to grow, and scales directly with key attributes relating to home range size and metabolism.
@@ -63,7 +63,7 @@ Fish consume nutrients in relation to key aspects of their diet, energetic deman
 
 While fish traits are directly linked to where and what fish eat, these characteristics are known to be correlated among related species, resulting in phylogenetically-predictable nutrient content ([Vaitla **et al** 2018](https://www.nature.com/articles/s41467-018-06199-w)). Therefore, we  included phylogenetic relatedness within the correlation structure of our statistical model (see *Model structure* below), using a recently-developed phylogenetic tree for all marine fishes ([Rabosky et al. 2013](https://www.nature.com/articles/ncomms2958)). 
 
-Lastly, samples of fish tissue in our nutrients database included nuisance parameters (things that influence sample collection but are not of direct interest), including the tissue type (muscle, whole, whole/parts, unkown; FO) and preparation (wet, dry, unknown; PR). 
+Lastly, samples of fish tissue in our nutrients database included nuisance parameters (things that influence sample collection but are not of direct interest), including the tissue type (muscle, whole, whole/parts, unknown; FO) and preparation (wet, dry, unknown; PR). 
 
 ## Model structure
 
