@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  18 JUN 2021 09:35
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  18 JUN 2021 10:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -649,14 +649,14 @@ LaTeX Info: Redefining \nameref on input line 21.
 \@outlinefile=\write3
 \openout3 = `more_info.out'.
 
+ [1
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-[1
 
-]
 Overfull \hbox (16.76501pt too wide) in paragraph at lines 42--43
 []\TU/lmr/bx/n/10 NutrientFishbase/model/FishBase_Nutrient_Models.py\TU/lmr/m/n
 /10 : Python code
@@ -715,7 +715,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
@@ -725,7 +725,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
@@ -756,7 +756,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
@@ -766,7 +766,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
@@ -808,8 +808,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
+[4]
 Missing character: There is no γ in font [lmroman10-regular]:mapping=tex-text;!
-[4] [5]
+ [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
  [6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
@@ -820,7 +821,7 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 150.
 Here is how much of TeX's memory you used:
  17750 strings out of 493005
  333035 string characters out of 6134596
- 417504 words of memory out of 5000000
+ 416504 words of memory out of 5000000
  21646 multiletter control sequences out of 15000+600000
  7960 words of font info for 41 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
