@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     # --------------------------------------Import data------------------------------------------------------------------ #
     # Species traits data
-    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/traits_for_predictions.csv')
+    sdata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_traits_for_predictions.csv')
     # Nutrients data
     ndata = pd.read_csv('https://raw.githubusercontent.com/mamacneil/NutrientFishbase/master/data/all_nutrients_active.csv')
     # Traits data
